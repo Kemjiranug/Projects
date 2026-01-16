@@ -23,7 +23,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 - Built visualizations to compare linear and non-linear embedding techniques  
 
 📌 **View Project:**  
-👉 [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
+ [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
 
 ---
 
@@ -37,7 +37,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 - Implemented ranking based on importance values  
 
 📌 **View Project:**  
-👉 [Character Search System](./Character%20Search%20System%20/Code)
+ [Character Search System](./Character%20Search%20System%20/Code)
 
 ---
 
@@ -51,7 +51,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 - Conducted **transaction analysis** to evaluate efficiency before and after optimization  
 
 📌 **View Project:**  
-👉 [Database Design and Implementation](./Database%20Design%20and%20Implementation)
+ [Database Design and Implementation](./Database%20Design%20and%20Implementation)
 
 ---
 
@@ -65,7 +65,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 - Improved information hierarchy based on user tasks and system priorities  
 
 📌 **View Project:**  
-👉 [Information Systems Analysis and Prototype](./Information%20Systems%20Analysis%20and%20Prototype)
+ [Information Systems Analysis and Prototype](./Information%20Systems%20Analysis%20and%20Prototype)
 
 ---
 
@@ -80,7 +80,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 - Integrated **Google Translate API** for multilingual support  
 
 📌 **View Project:**  
-👉 [E-commerce Web Application](./E-commerce%20Web%20Application)
+ [E-commerce Web Application](./E-commerce%20Web%20Application)
 
 ---
 
