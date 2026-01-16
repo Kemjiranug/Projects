@@ -13,7 +13,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ## Projects in This Repository
 
-### 1. Alzheimer’s Disease Pattern Analysis 🧠
+### 1. Alzheimer’s Disease Pattern Analysis 
 *(Data Analysis & Visualization)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -27,7 +27,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 2. Character Search System 🔎
+### 2. Character Search System 
 *(Information Retrieval & Search Engine)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -41,7 +41,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 3. Database Design and Implementation 🗄️
+### 3. Database Design and Implementation 
 *(Relational Database System)*  
 📅 **Duration:** 01/2024 – 02/2024  
 
@@ -55,7 +55,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 4. Information Systems Analysis and Prototype 📊
+### 4. Information Systems Analysis and Prototype 
 *(System Analysis & UI/UX Prototype)*  
 📅 **Duration:** 02/2025 – 04/2025  
 
@@ -69,7 +69,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 5. E-commerce Web Application 🛒
+### 5. E-commerce Web Application 
 *(Full-Stack Web Application)*  
 📅 **Duration:** 02/2024 – 04/2024  
 
@@ -84,7 +84,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-## 🚀 How to Use This Repository
+##  How to Use This Repository
 
 1. Browse through the project folders  
 2. Each project contains its own documentation or source code  
@@ -92,7 +92,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-## 📫 Connect with Me
+## Connect with Me
 
 - 📧 **Email:** [nug.kemjira@gmail.com](mailto:nug.kemjira@gmail.com)  
 - 🔗 **LinkedIn:** [https://www.linkedin.com/in/kemjira-nugboon](https://www.linkedin.com/in/kemjira-nugboon)
