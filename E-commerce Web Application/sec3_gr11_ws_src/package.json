@@ -1,0 +1,23 @@
+{
+  "name": "sec3_gr11_ws_src",
+  "version": "1.0.0",
+  "main": "backend.js",
+  "scripts": {
+    "start": "nodemon backend.js"
+  },
+  "author": "gr11",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "expression": "^0.0.1",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  },
+  "description": ""
+}
