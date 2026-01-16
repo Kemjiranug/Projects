@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ character.name }}</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", sans-serif;
+      background-color: #f8dff2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: #fff8fb;
+      border-radius: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      max-width: 950px;
+      background-image: url("/static/bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    img.character {
+      width: 500px;
+      height: 280px;
+      border-radius: 10px;
+      object-fit: cover;
+      padding: 60px;
+    }
+
+    .bow {
+      position: absolute;
+      top: -50px;
+      right: -80px;
+      width: 200px;
+      height: auto;
+      z-index: 10;
+    }
+
+    .text-box {
+      background-color: rgba(255, 230, 245, 0.85);
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .title {
+      background-color: #f5b3e0;
+      padding: 8px 20px;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .back-btn {
+      background-color: #f5b3e0;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px 25px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .back-btn:hover {
+      background-color: #eb93cd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #d499f5;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px;
+      margin-top: auto;
+    }
+
+    /* Home button in top-right corner */
+    .home-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      z-index: 20;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Home button -->
+  <a href="/templates/index.html">
+    <img src="/static/home.png" class="home-btn" alt="Home" />
+  </a>
+
+  <div class="container">
+    <div class="card">
+      <!-- Bow in top right of card -->
+      <img src="/static/Bow.png" class="bow" alt="Bow" />
+
+      <img src="{{ character.picture_url }}" alt="{{ character.name }}" class="character" />
+
+      <div class="text-box">
+        <div class="title">{{ character.name }}</div>
+        <p><b>Description:</b> {{ character.description }}</p>
+        <p><b>First appearance:</b> {{ character.first_appearance }}</p>
+        <p><b>Creator name:</b> {{ character.creator_name }}</p>
+        <p><b>Species:</b> {{ character.species }}</p>
+        <p><b>Gender:</b> {{ character.gender }}</p>
+
+        <button class="back-btn" onclick="window.history.back()">Back to Search</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>@SANRIOSYNC</footer>
+</body>
+
+</html>

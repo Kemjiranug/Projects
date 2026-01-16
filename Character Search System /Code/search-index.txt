@@ -1,0 +1,374 @@
+DELETE sanrio_characters
+
+PUT sanrio_characters
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "max_ngram_diff": 20,
+    "analysis": {
+      "char_filter": {
+        "remove_special": {
+          "type": "mapping",
+          "mappings": [
+            "â€™ => '",
+            "â€ => '\"",
+            "Â => ''"
+          ]
+        },
+        "space_to_underscore": {
+          "type": "pattern_replace",
+          "pattern": "\\s+",
+          "replacement": "_"
+        }
+      },
+      "normalizer": {
+        "lowercase_normalizer": {
+          "type": "custom",
+          "filter": ["lowercase"]
+        }
+      },
+      "filter": {
+        "general_synonyms": {
+          "type": "synonym_graph",
+          "synonyms": [
+            "puppy, pup => dog",
+            "kitty, kitten, neko => cat",
+            "bunny, hare, lapine => rabbit",
+            "chick, fowl => bird",
+            "teddy => bear",
+            "magical, mystical, fantasy, enchanted => magic",
+            "kawaii, adorable, sweet, charming, lovely => cute",
+            "cheerful, joyful, bright, energetic, lively => happy",
+            "timid, quiet, reserved, bashful => shy",
+            "friendly, companionship, buddy => friend",
+            "loves, loving, beloved, affectionate => love",
+            "dreams, dreaming, dreamy => dream",
+            "meal, cuisine, culinary => food"
+          ]
+        },
+        "character_synonyms": {
+          "type": "synonym",
+          "synonyms": [
+            "hello_kitty, kitty_chan, kitty_white",
+            "my_melody, my_melo, melody",
+            "kuromi, kuro",
+            "cinnamoroll, cinnamon, cinna",
+            "pompompurin, purin",
+            "keroppi, kero_kero_keroppi, kero",
+            "badtz_maru, badtz, bad_badtz",
+            "gudetama, lazy_egg, sleepy_egg",
+            "aggretsuko, retsuko",
+            "little_twin_stars, kiki_lala, twin_stars",
+            "chococat, choco",
+            "tuxedosam, tuxedo_sam"
+          ]
+        },
+        "english_stop": {
+          "type": "stop",
+          "stopwords": "_english_"
+        },
+        "edge_ngram_filter": {
+          "type": "edge_ngram",
+          "min_gram": 2,
+          "max_gram": 20
+        }
+      },
+      "analyzer": {
+        "synonym_analyzer": {
+          "char_filter": ["remove_special"],
+          "tokenizer": "standard",
+          "filter": ["lowercase", "english_stop", "general_synonyms"]
+        },
+        "character_synonym_analyzer": {
+          "char_filter": ["remove_special", "space_to_underscore"],
+          "tokenizer": "keyword",
+          "filter": ["lowercase", "character_synonyms"]
+        },
+        "autocomplete_analyzer": {
+          "tokenizer": "standard",
+          "filter": ["lowercase", "edge_ngram_filter"]
+        },
+        "autocomplete_search_analyzer": {
+          "tokenizer": "standard",
+          "filter": ["lowercase"]
+        },
+        "exact_analyzer": {
+          "tokenizer": "keyword",
+          "filter": ["lowercase"]
+        },
+        "species_analyzer": {
+          "tokenizer": "standard",
+          "filter": ["lowercase"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text",
+        "analyzer": "character_synonym_analyzer",
+        "fields": {
+          "keyword": { 
+            "type": "keyword", 
+            "ignore_above": 256 
+          },
+          "autocomplete": { 
+            "type": "text", 
+            "analyzer": "autocomplete_analyzer", 
+            "search_analyzer": "autocomplete_search_analyzer" 
+          },
+          "exact": { 
+            "type": "text", 
+            "analyzer": "exact_analyzer" 
+          }
+        }
+      },
+      "description": {
+        "type": "text",
+        "analyzer": "synonym_analyzer",
+        "fields": {
+          "raw": {
+            "type": "text",
+            "analyzer": "standard"
+          }
+        }
+      },
+      "species": {
+        "type": "text",
+        "analyzer": "species_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256,
+            "normalizer": "lowercase_normalizer"
+          },
+          "exact": {
+            "type": "text",
+            "analyzer": "exact_analyzer"
+          },
+          "synonym": {
+            "type": "text",
+            "analyzer": "synonym_analyzer"
+          }
+        }
+      }
+    }
+  }
+}
+
+POST _scripts/sanrio_one_word_search
+{
+  "script": {
+    "lang": "mustache",
+    "source": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "species.keyword": {
+                  "value": "{{query_string}}",
+                  "boost": 10,
+                  "case_insensitive": true
+                }
+              }
+            },
+            {
+              "match": {
+                "species": {
+                  "query": "{{query_string}}",
+                  "boost": 8
+                }
+              }
+            },
+            {
+              "match": {
+                "species.synonym": {
+                  "query": "{{query_string}}",
+                  "boost": 5
+                }
+              }
+            },
+            {
+              "multi_match": {
+                "query": "{{query_string}}",
+                "fields": ["name^10", "name.autocomplete^5"],
+                "type": "best_fields",
+                "fuzziness": "AUTO"
+              }
+            },
+            {
+              "match": {
+                "description.raw": {
+                  "query": "{{query_string}}",
+                  "boost": 3
+                }
+              }
+            },
+            {
+              "match": {
+                "description": {
+                  "query": "{{query_string}}",
+                  "boost": 2
+                }
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      "size": "{{size}}{{^size}}20{{/size}}"
+    }
+  }
+}
+
+POST _scripts/sanrio_multi_word_search
+{
+  "script": {
+    "lang": "mustache",
+    "source": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "match_phrase": {
+                "name": {
+                  "query": "{{query_string}}",
+                  "boost": 10
+                }
+              }
+            },
+            {
+              "match": {
+                "name": {
+                  "query": "{{query_string}}",
+                  "operator": "and",
+                  "boost": 5
+                }
+              }
+            },
+            {
+              "match_phrase": {
+                "species": {
+                  "query": "{{query_string}}",
+                  "boost": 8
+                }
+              }
+            },
+            {
+              "match": {
+                "species": {
+                  "query": "{{query_string}}",
+                  "operator": "and",
+                  "boost": 4
+                }
+              }
+            },
+            {
+              "multi_match": {
+                "query": "{{query_string}}",
+                "fields": ["description.raw^3", "description^2"],
+                "type": "cross_fields",
+                "operator": "and"
+              }
+            },
+            {
+              "match": {
+                "name": {
+                  "query": "{{query_string}}",
+                  "operator": "or",
+                  "boost": 2
+                }
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      "size": "{{size}}{{^size}}20{{/size}}"
+    }
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "kitty",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "hamster",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "rabbit",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "dog",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_multi_word_search",
+  "params": {
+    "query_string": "pink rabbit",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_multi_word_search",
+  "params": {
+    "query_string": "cute dog",
+    "size": 20
+  }
+}
+
+POST sanrio_characters/_search/template
+{
+  "id": "sanrio_multi_word_search",
+  "params": {
+    "query_string": "hello kitty",
+    "size": 20
+  }
+}
+
+GET sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "pom",
+    "size": 10
+  }
+}
+
+GET sanrio_characters/_search/template
+{
+  "id": "sanrio_one_word_search",
+  "params": {
+    "query_string": "cinna",
+    "size": 10
+  }
+}
