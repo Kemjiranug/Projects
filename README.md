@@ -7,8 +7,7 @@ This repository showcases my academic and practical projects in **Database Syste
 
 ## About Me
 
-I am a **third-year Information and Communication Technology (ICT) student** at **Mahidol University**, specializing in **Database Systems**.  
-I am passionate about **data-driven applications, system analysis, information retrieval, and full-stack development**. My projects focus on applying theory to real-world problems, ranging from database optimization to data analysis and web applications.
+I am a third-year Information and Communication Technology (ICT) student at Mahidol University, specializing in Database Systems. I have a strong interest in data-driven applications, system analysis, information retrieval, and full-stack development. My projects emphasize applying theoretical knowledge to real-world scenarios, including database optimization, data analysis, and web application development.
 
 ---
 
