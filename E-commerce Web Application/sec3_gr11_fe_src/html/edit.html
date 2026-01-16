@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelly Bunny - Men's Fashion</title>
+    <link rel="stylesheet" href="/css/add.css">
+    <script src="/js/cookie.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-banner">
+            Summer Sale For All Swim Suits And Free Express Delivery-OFF 50% <a href="#">ShopNow</a>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://jellybunny.com/cdn/shop/files/logo_aa9174d7-06db-4efe-ba2f-8af4e4f9c6f1.png?v=1726717153&width=120"
+                    width="80" alt="jellybunny" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/edit">Edit</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="/search"><img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/74d610171b49cc3b18b456fe06d02bff2a8f09126ee10249b3afcbc71e046e51?apiKey=17a27039907c49e7b5a6c90c007a4cde&"
+                        width="20" alt="Search" /></a>
+                <a href="/sign-in"><img src="https://img.icons8.com/ios-glyphs/30/user.png" width="20"
+                        alt="Profile"></a>
+                <img src="/picture/cart.png" width="20" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="Add-product">
+        <div class="Add-product-header">
+            <h1>Edit Product</h1>
+        </div>
+
+        <div class="Add-product-container">
+            <div class="product-details">
+                <fieldset>
+                    <form id="editProductForm">
+                        <div class="Label">
+                            <label for="txtID">ID:</label>
+                            <input type="text" id="txtID" name="txtID" required disabled>
+
+                            <label for="txtProductname">Product Name:</label>
+                            <input type="text" id="txtProductname" name="txtProductname" required>
+
+                            <label for="txtStatus">Product Status:</label>
+                            <input type="text" id="txtStatus" name="txtStatus" required>
+                        </div>
+
+                        <div class="Label">
+                            <label for="txtPrice">Price:</label>
+                            <input type="number" id="txtPrice" name="txtPrice" required>
+                        </div>
+
+                        <div class="option">
+                            Categories:
+                            <input type="radio" name="product-categories" value="WOMEN" required> WOMEN
+                            <input type="radio" name="product-categories" value="MEN"> MEN
+                        </div>
+
+                        <div class="option">
+                            Seasons:
+                            <input type="radio" name="product-season" value="Winter" required> Winter
+                            <input type="radio" name="product-season" value="Summer"> Summer
+                        </div>
+
+                        <div class="Label">
+                            <label for="txtDescription">Description:</label>
+                            <textarea id="txtDescription" name="txtDescription" rows="9" cols="10" required></textarea>
+                        </div>
+
+                        <div class="Label">
+                            <label for="txtQuantity">Quantity:</label>
+                            <input type="number" id="txtQuantity" name="txtQuantity" required>
+                        </div>
+
+                        <div class="Label">
+                            <label for="txtImage1">Image 1 URL:</label>
+                            <input type="url" id="txtImage1" name="txtImage1" required>
+                        </div>
+                        <div class="Label">
+                            <label for="txtImage2">Image 2 URL:</label>
+                            <input type="url" id="txtImage2" name="txtImage2">
+                        </div>
+                        <div class="Label">
+                            <label for="txtImage3">Image 3 URL:</label>
+                            <input type="url" id="txtImage3" name="txtImage3">
+                        </div>
+                        <div class="Label">
+                            <label for="txtImage4">Image 4 URL:</label>
+                            <input type="url" id="txtImage4" name="txtImage4">
+                        </div>
+                      
+                        <div class="botton-container">
+                            <button type="reset" onclick="goToProductManagement()">CANCEL</button>
+                            <button type="submit" id="saveBtn">SAVE</button>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+        function fetchProductDetails() {
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+
+            fetch(`http://localhost:8000/product_detail?prod_ID=${id}`)
+                .then(response => response.json())
+                .then(product => {
+
+                    // data.forEach(product => {
+
+                    document.getElementById('txtID').value = product.prod_ID;
+                    document.getElementById('txtProductname').value = product.prod_name;
+                    document.getElementById("txtStatus").value = product.prod_status;
+                    document.getElementById('txtPrice').value = product.prod_price;
+                    document.getElementById('txtDescription').value = product.prod_description;
+                    document.getElementById('txtQuantity').value = product.prod_quantity;
+                    document.getElementById('txtImage1').value = product.prod_pic1;
+                    document.getElementById('txtImage2').value = product.prod_pic2;
+                    document.getElementById('txtImage3').value = product.prod_pic3;
+                    document.getElementById('txtImage4').value = product.prod_pic4;
+
+                    const categories = product.prod_category.toUpperCase();
+                    const checkboxes_categories = document.getElementsByName('product-categories');
+                    checkboxes_categories.forEach(checkbox => {
+                        if (checkbox.value.toUpperCase() == categories) {
+                            checkbox.checked = true;
+                        }
+                    });
+
+
+                    const seasons = product.prod_seasons.toUpperCase();
+                    const checkboxes_season = document.getElementsByName('product-season');
+                    checkboxes_season.forEach(checkbox => {
+                        if (checkbox.value.toUpperCase() == seasons) {
+                            checkbox.checked = true;
+                        }
+                    });
+                })
+                .catch(error => console.error('Error fetching product details:', error));
+        }
+
+        // Handle form submission
+        document.getElementById('editProductForm').addEventListener('submit', saveProduct);
+
+        function saveProduct(event) {
+            event.preventDefault();  // Prevent form submission
+
+            // Get product data from form fields
+            const prod_ID = document.getElementById('txtID').value;
+            const tx_prod_name = document.getElementById('txtProductname').value;
+            const tx_prod_status = document.getElementById("txtStatus").value;
+            const tx_prod_price = document.getElementById('txtPrice').value;
+            const tx_prod_category = getSelectedCategory();
+            const tx_prod_seasons = getSelectedSeason();
+            const tx_prod_description = document.getElementById('txtDescription').value;
+            const tx_prod_quantity = document.getElementById('txtQuantity').value;
+            const tx_prod_pic1 = document.getElementById('txtImage1').value;
+            const tx_prod_pic2 = document.getElementById('txtImage2').value;
+            const tx_prod_pic3 = document.getElementById('txtImage3').value;
+            const tx_prod_pic4 = document.getElementById('txtImage4').value;
+
+            // Create product object
+            const editProduct = {
+                prod_name: tx_prod_name,
+                prod_status: tx_prod_status,
+                prod_pic1: tx_prod_pic1,
+                prod_pic2: tx_prod_pic2,
+                prod_pic3: tx_prod_pic3,
+                prod_pic4: tx_prod_pic4,
+                prod_category: getSelectedCategory(),
+                prod_seasons: getSelectedSeason(),
+                prod_description: tx_prod_description,
+                prod_price: tx_prod_price,
+                prod_quantity: tx_prod_quantity
+            };
+
+            // Send data to the server using fetch
+            fetch(`http://localhost:8000/update-product?prod_ID=${prod_ID}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ Product: editProduct }),
+            })
+                .then(response => {
+
+                    if (!response.ok) {
+                        // throw new Error('Network response was not ok');
+                        alert('Error updateing product into the database');
+                    }
+                    if (response.ok) {
+                        alert('Product has been updated successfully.');
+                        window.location.href = 'http://localhost:3300/edit';
+                        //return response.json(); // Parse JSON response
+                    }
+
+                })
+                .then(data => {
+
+                    console.log(data); // Log the response from the server
+                    //alert(data.alertMessage); // Display the alert message
+                })
+                .catch(error => {
+
+                    console.log('Error:', error);
+                });
+
+        }
+
+        // Helper function to get selected category
+        function getSelectedCategory() {
+            const categories = document.getElementsByName('product-categories');
+            for (let i = 0; i < categories.length; i++) {
+                if (categories[i].checked) {
+                    return categories[i].value;
+                }
+            }
+            return null;  // Return null if no category is selected
+        }
+
+        // Helper function to get selected season
+        function getSelectedSeason() {
+            const seasons = document.getElementsByName('product-season');
+            for (let i = 0; i < seasons.length; i++) {
+                if (seasons[i].checked) {
+                    return seasons[i].value;
+                }
+            }
+            return null;  // Return null if no season is selected
+        }
+
+        function setSelectedCategory(vValue) {
+            const categories = document.getElementsByName('product-categories');
+            for (let i = 0; i < categories.length; i++) {
+                if (categories[i].value == vValue) {
+                    return categories[i].checked = true;
+                }
+            }
+            return null;  // Return null if no category is selected
+        }
+
+        // Helper function to get selected season
+        function setSelectedSeason(vValue) {
+            const seasons = document.getElementsByName('product-season');
+            for (let i = 0; i < seasons.length; i++) {
+                if (seasons[i].value == vValue) {
+                    return seasons[i].checked = true;
+                }
+            }
+            return null;  // Return null if no season is selected
+        }
+        // Redirect function
+        function goToProductManagement() {
+            window.location.href = 'http://localhost:3300/edit';
+        }
+
+        window.addEventListener('load', function () {
+            let loginStatus = getCookie("loginStatus");
+            if (loginStatus == 'true') {
+               
+                fetchProductDetails();
+            } else {
+                
+                window.location.href = "http://localhost:3300/sign-in";
+
+            }
+
+        });
+
+    </script>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Terms of Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column news">
+                <h4>Newsletter</h4>
+                <p>Sign up to receive offers:</p>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+        <p class="copyright">&copy; Copyright JellyBunny, all rights reserved.</p>
+    </footer>
+</body>
+
+</html>

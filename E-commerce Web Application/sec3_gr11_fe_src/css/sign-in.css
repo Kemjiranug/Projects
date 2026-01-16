@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-banner{
+    background-color: #5856d6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.top-banner a{
+    color: white;
+    text-decoration: underline;
+} 
+
+/* navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5856d6;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons a img {
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.nav-icons a:hover img {
+    transform: scale(1.2);
+}
+
+        .banner {
+            background-color: #5856d6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            gap: 60px;
+            flex-wrap: wrap;
+            background-color: #f8f8ff;
+        }
+        
+        .logo-container {
+            max-width: 500px;
+        }
+        
+        .logo-container img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .signin-signup {
+            background-color: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .sign-in-form .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #000000;
+            text-align: center;
+        }
+        
+        .form-row {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #6c63ff;
+            outline: none;
+        }
+        
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .sign-in.button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .sign-in.button:hover {
+            background-color: #5a52e8;
+        }
+        
+        .message {
+            margin-top: 20px;
+            color: red;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+ /* footer */
+footer{
+    background-color: #5a4fcf;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-column{
+    max-width: 250px;
+}
+
+.footer-column h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li{
+    margin: 5px 0;
+}
+
+.footer-column ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column news{
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.footer-column news input{
+    flex: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+.copyright{
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: center;
+}

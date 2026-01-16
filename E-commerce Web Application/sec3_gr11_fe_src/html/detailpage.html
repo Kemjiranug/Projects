@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="/css/detailpage.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Header -->
+        <div class="top-banner">
+            Summer Sale For All Swim Suits And Free Express Delivery-OFF 50% <a href="#">ShopNow</a>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://jellybunny.com/cdn/shop/files/logo_aa9174d7-06db-4efe-ba2f-8af4e4f9c6f1.png?v=1726717153&width=120"
+                    width="80" alt="jellybunny" />
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/edit">Edit</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="/search"><img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/74d610171b49cc3b18b456fe06d02bff2a8f09126ee10249b3afcbc71e046e51?apiKey=17a27039907c49e7b5a6c90c007a4cde&"
+                        width="20" alt="Search" /></a>
+                <a href="/sign-in"><img src="https://img.icons8.com/ios-glyphs/30/user.png" width="20"
+                        alt="Profile"></a>
+                <img src="/picture/cart.png" width="20" alt="Cart"></a>
+            </div>
+        </nav>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="product-container">
+
+
+            <div class="product-gallery">
+                <div class="details-pants-left" id="details-pants-left">
+                    <div> <img
+                            src="https://jellybunny.com/cdn/shop/files/B25SARL008_YLW000_1_9cf9c0a6-8d69-4318-80cd-3527cb1e6454.jpg?v=1737543406&width=1200"
+                            alt="pantsblue2"></div>
+
+                    <div> <img
+                            src="https://jellybunny.com/cdn/shop/files/B25SARL008_YLW000_1_9cf9c0a6-8d69-4318-80cd-3527cb1e6454.jpg?v=1737543406&width=1200"
+                            alt="pantsblue3"></div>
+
+                    <div> <img
+                            src="https://jellybunny.com/cdn/shop/files/B25SARL008_YLW000_1_9cf9c0a6-8d69-4318-80cd-3527cb1e6454.jpg?v=1737543406&width=1200"
+                            alt="pantsblue3"></div>
+                </div>
+                <div class="details-pants-right" id="details-pants-right">
+                    <img src="https://jellybunny.com/cdn/shop/files/B25SARL008_YLW000_1_9cf9c0a6-8d69-4318-80cd-3527cb1e6454.jpg?v=1737543406&width=1200"
+                        alt="pantsbluemain">
+                </div>
+
+
+
+            </div>
+            <div class="product-details">
+                <h1 class="Productname"></h1>
+                <p class="Status" id="Status">In Stock</p>
+                <p>
+                <h2 class="Price">1,790 ฿</h2>
+                </p>
+
+                <div class="option">
+                    Categories:
+                    <h id="Category">Category: </h>
+                </div>
+
+                <div class="option">
+                    Seasons:
+                    <h id="Seasons">Seasons:</h>
+                </div>
+
+                <div class="counter">
+                    <button onclick="decrement()">-</button>
+                    <span id="count">1</span>
+                    <button onclick="increment()">+</button>
+                </div>
+
+                <div class="button-container">
+                    <button class="buy-now">Buy Now</button>
+
+                    <button class="favorite-btn" onclick="toggleFavorite()">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <script>
+                    let count = 1;
+
+                    function increment() {
+                        count++;
+                        updateCount();
+                    }
+
+                    function decrement() {
+                        if (count > 1) {
+                            count--;
+                            updateCount();
+                        }
+                    }
+
+                    function updateCount() {
+                        document.getElementById('count').textContent = count;
+
+                    }
+
+                    function toggleFavorite() {
+                        document.querySelector('.favorite-btn').classList.toggle('active');
+                    }
+                </script>
+                <div>
+                    <p class="description">Description:</p>
+                    <p class="Description" id="Description">Blend sporty and sweet in these relaxed-fit denim track
+                        pants featuring
+                        playful
+                        JB varsity patches and side strips.</p>
+                </div>
+                <div class="section">
+                    <div class="icon">🚚</div>
+                    <div>
+                        <strong>Free Delivery</strong><br>
+                        <a href="#">Enter your postal code for Delivery Availability</a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="icon">↩️</div>
+                    <div>
+                        <strong>Return Delivery</strong><br>
+                        Free 30 Days Delivery Returns. <a href="#">Details</a>
+                    </div>
+                
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Terms of Conditions</a></li>
+                    <li><a href="#">Provacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column news">
+                <h4>Newsletter</h4>
+                <p>Sign up to receive offers:</p>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+        <p class="copyright">&copy; Copyright JellyBunny, all rights reserved.</p>
+    </footer>
+
+    <script>
+        function showError(message) {
+            document.getElementById("product-detail").innerHTML = `<p style="color:red;">${message}</p>`;
+        }
+
+        function getProductIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get("id");
+        }
+
+
+        function fetchProductDetails() {
+
+            const productId = getProductIdFromURL(); // สมมุติว่ามีฟังก์ชันดึง productId จาก URL
+            const apiUrl = `http://localhost:8000/product_detail?prod_ID=${productId}`;
+
+
+            fetch(apiUrl)
+                .then(response => response.json()) // ดึงข้อมูลเป็นข้อความก่อน
+                .then(product => {
+                    //console.log("Response text:", text); // ตรวจสอบเนื้อหาที่ได้จาก API
+                    try {
+                        //const product = JSON.parse(text); // แปลงข้อความเป็น JSON
+                        console.log("Parsed product:", product);
+                        displayProduct(product); // แสดงข้อมูลสินค้า
+                    } catch (e) {
+                        console.error("JSON parse error:", e);
+                        showError("ไม่สามารถโหลดข้อมูลสินค้าได้ (ข้อมูลผิดรูปแบบ)");
+                    }
+                })
+                .catch(error => {
+                    console.error("Fetch error:", error);
+                    showError("เกิดข้อผิดพลาดในการดึงข้อมูลสินค้า");
+                });
+
+        }
+
+        function displayProduct(product) {
+            document.querySelector('.Productname').textContent = product.prod_name;
+            document.getElementById('Status').textContent = product.prod_status;
+            document.querySelector('.Price').textContent = `${product.prod_price} ฿`;
+            document.getElementById('Description').textContent = product.prod_description;
+            document.getElementById('Category').textContent = product.prod_category;
+            document.getElementById('Seasons').textContent = product.prod_seasons;
+
+
+            let productImagesContainer = document.getElementById('details-pants-right');
+            productImagesContainer.innerHTML = '';
+            productImagesContainer = document.getElementById('details-pants-left');
+            productImagesContainer.innerHTML = '';
+
+            let imagesExist = false;
+            for (let i = 1; i <= 4; i++) {
+                const imageUrl = product[`prod_pic${i}`];
+                if (i == 1) {
+                    productImagesContainer = document.getElementById('details-pants-right');
+
+                } else {
+                    productImagesContainer = document.getElementById('details-pants-left');
+                }
+
+                if (imageUrl) {
+
+                    if (i == 1) {
+                        imagesExist = true;
+                        const imgElement = document.createElement('img');
+                        imgElement.src = imageUrl;
+                        imgElement.alt = 'Product Image';
+                        productImagesContainer.appendChild(imgElement);
+                    } else {
+                        const divElement = document.createElement('div');
+                        const imgElement = document.createElement('img');
+                        imgElement.src = imageUrl;
+                        imgElement.alt = 'Product Image';
+                        divElement.appendChild(imgElement);
+                        productImagesContainer.appendChild(divElement);
+
+                    }
+                }
+            }
+
+            if (!imagesExist) {
+                productImagesContainer.style.display = 'none';
+            } else {
+                productImagesContainer.style.display = 'block';
+            }
+
+
+
+        }
+
+
+
+
+        window.addEventListener('DOMContentLoaded', fetchProductDetails);
+    </script>
+   
+</body>
+
+</html>

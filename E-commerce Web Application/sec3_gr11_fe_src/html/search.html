@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+    <link rel="stylesheet" href="/css/search.css">
+    <style>
+        .image_resize{
+            width: 1000px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Header -->
+        <div class="top-banner">
+            Summer Sale For All Swim Suits And Free Express Delivery-OFF 50% <a href="#">ShopNow</a>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://jellybunny.com/cdn/shop/files/logo_aa9174d7-06db-4efe-ba2f-8af4e4f9c6f1.png?v=1726717153&width=120"
+                    width="80" alt="jellybunny" />
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/edit">Edit</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="/search"><img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/74d610171b49cc3b18b456fe06d02bff2a8f09126ee10249b3afcbc71e046e51?apiKey=17a27039907c49e7b5a6c90c007a4cde&"
+                        width="20" alt="Search" /></a>
+                <a href="/sign-in"><img src="https://img.icons8.com/ios-glyphs/30/user.png" width="20"
+                        alt="Profile"></a>
+                <img src="/picture/cart.png" width="20" alt="Cart"></a>
+            </div>
+        </nav>
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <!--Banner-->
+        <div class="banner">
+            <img src="/picture/search.webp" class ="image_resize" alt="Banner" /></div>
+
+        <div class="bg-img">
+            <div class="List">
+                <!-- Category Select -->
+                <div class="category">
+                    <div class="Category-heading">
+                        <h6>CATEGORIES</h6>
+                    </div>
+                    <div class="Category-List">
+                        <select class="Category-Container" id="Category-select">
+                            <option value="All">All Products</option>
+                            <option value="Women">Women</option>
+                            <option value="Men">Men</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Season Select -->
+                <div class="season">
+                    <div class="Season-heading">
+                        <h6>SEASON</h6>
+                    </div>
+                    <div class="Season-List">
+                        <select class="Season-Container" id="Season-select">
+                            <option value="All">All</option>
+                            <option value="Summer">Summer</option>
+                            <option value="Winter">Winter</option>
+                        </select>
+                    </div>
+                </div>
+
+               <!-- Sort Option -->
+                 <div class="Sort by">
+                    <div class="Sort">
+                        <h6>Sort by</h6>
+                    </div>
+                    <div class="Sort-List">
+                        <select class="Sort-Container" id="Sort">
+                            <option value="nameAZ">Name (A-Z)</option>
+                            <option value="nameZA">Name (Z-A)</option>
+                            <option value="priceLowToHigh">Price (Low to High)</option>
+                            <option value="priceHighToLow">Price (High to Low)</option>
+                        </select>
+                    </div>
+                </div>
+
+    
+                
+            </div>
+
+            <!-- Product list container -->
+            <div class="product-list-container"></div>
+
+
+            <script>
+                function getUrlParam(name) {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    return urlParams.get(name);
+                }
+
+                window.addEventListener('load', function () {
+                    const productName = getUrlParam('productName') || '';
+                    const category = document.getElementById('Category-select').value;
+                    const season = document.getElementById('Season-select').value;
+                    const sort = document.getElementById('Sort').value;
+
+                    fetchProductData(productName, category, season, sort);
+                });
+
+                function fetchProductData(productName, category, season, sortBy) {
+                    let url = 'http://localhost:8000/select';
+                    const queryParams = [];
+
+                    if (productName) queryParams.push(`productName=${productName}`);
+                    if (category && category !== 'All') queryParams.push(`category=${category}`);
+                    if (season && season !== 'All') queryParams.push(`season=${season}`);
+                    if (sortBy) queryParams.push(`sortBy=${sortBy}`);
+
+                    if (queryParams.length > 0) {
+                        url += '?' + queryParams.join('&');
+                    }
+
+                    console.log('Fetching from:', url);
+
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            const productListContainer = document.querySelector('.product-list-container');
+                            productListContainer.innerHTML = '';
+
+                            let row = document.createElement('div');
+                            row.classList.add('Row');
+
+                            data.forEach(product => {
+                                const column = document.createElement('div');
+                                column.classList.add('column');
+
+                                const imageContainer = document.createElement('div');
+                                imageContainer.classList.add('image-container');
+                                const productImage = document.createElement('img');
+                                productImage.src = product.prod_pic1;
+                                productImage.alt = product.prod_name;
+                                imageContainer.appendChild(productImage);
+
+                                const productDetails = document.createElement('div');
+                                productDetails.classList.add('product-details');
+                                productDetails.innerHTML = `
+                            <h3 class="product-title">${product.prod_name}</h3>
+                            <p class="product-price">฿${product.prod_price}</p>
+                            
+                        `;
+
+                                column.appendChild(imageContainer);
+                                column.appendChild(productDetails);
+
+                                column.addEventListener('click', function () {
+                                    window.location.href = `/detail-page?id=${product.prod_ID}`;
+                                });
+
+                                row.appendChild(column);
+
+                                if (row.children.length === 4) {
+                                    productListContainer.appendChild(row);
+                                    row = document.createElement('div');
+                                    row.classList.add('Row');
+                                }
+                            });
+
+                            if (row.children.length > 0) {
+                                productListContainer.appendChild(row);
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+
+                // Add event listeners for all filters
+                document.getElementById('Category-select').addEventListener('change', updateProductList);
+                document.getElementById('Season-select').addEventListener('change', updateProductList);
+                document.getElementById('Sort').addEventListener('change', updateProductList);
+
+                function updateProductList() {
+                    const productName = getUrlParam('productName') || '';
+                    const category = document.getElementById('Category-select').value;
+                    const season = document.getElementById('Season-select').value;
+                    const sort = document.getElementById('Sort').value;
+
+                    fetchProductData(productName, category, season, sort);
+                }
+            </script>
+
+            <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Terms of Conditions</a></li>
+                    <li><a href="#">Provacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column news">
+                <h4>Newsletter</h4>
+                <p>Sign up to receive offers:</p>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+        <p class="copyright">&copy; Copyright JellyBunny, all rights reserved.</p>
+    </footer>
+</body>
+
+</html>

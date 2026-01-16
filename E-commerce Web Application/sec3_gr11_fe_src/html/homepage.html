@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jelly Bunny</title>
+    <link rel="stylesheet" href="../css/homepage.css" />
+</head>
+
+<body>
+
+    <header>
+        <!-- Header -->
+        <div class="top-banner">
+            Summer Sale For All Swim Suits And Free Express Delivery-OFF 50% <a href="#">ShopNow</a>
+        </div>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://jellybunny.com/cdn/shop/files/logo_aa9174d7-06db-4efe-ba2f-8af4e4f9c6f1.png?v=1726717153&width=120"
+                    width="80" alt="jellybunny" />
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/homepage">Home</a></li>
+                <li><a href="/product">Product</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/edit">Edit</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="/search"><img
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/74d610171b49cc3b18b456fe06d02bff2a8f09126ee10249b3afcbc71e046e51?apiKey=17a27039907c49e7b5a6c90c007a4cde&"
+                        width="20" alt="Search" /></a>
+                <a href="/sign-in"><img src="https://img.icons8.com/ios-glyphs/30/user.png" width="20"
+                        alt="Profile"></a>
+                <img src="/picture/cart.png" width="20" alt="Cart"></a>
+            </div>
+        </nav>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content-->
+    <main class="main-content">
+
+        <!--Banner-->
+        <section class="banner">
+            <img src="/picture/orange_banner.jpg" alt="Banner" />
+        </section>
+
+
+        <!--Best Selling Products-->
+        <section class="best-selling">
+            <h5 class="section-label">This Month</h5>
+            <h2>Best Selling Products</h2>
+
+            <div class="best-selling-grid">
+
+            </div>
+
+            <div class="view-products-wrapper">
+                <button class="view-products-button" onclick="window.location.href='/product'">
+                    View All Products
+                </button>
+            </div>
+
+        </section>
+
+
+        <!--New Arrival Section-->
+        <section class="new-arrivals">
+            <h5 class="section-label">Featured</h5>
+            <h2>New Arrival</h2>
+            <div class="banner">
+                <img src="/picture/banner.webp" alt="Banner" />
+            </div>
+
+            <div class="new-arrivals-container">
+            
+                <div class="new-arrivals-grid">
+                    <article class="product-card1">
+                        <div class="product-image-container">
+                            <img class="product-image">
+                            <div class="product-badge"></div>
+
+                        </div>
+                        <h3 class="product-name"></h3>
+                        <div class="product-price"></div>
+                        <div class="see-more-button"></div>
+                    </article>
+                </div>
+            </div>
+            <div class="view-products-wrapper">
+                <button class="view-products-button" onclick="window.location.href='/product'">
+                    View All Products
+                </button>
+            </div>
+
+
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="features-text">
+                <div class="icon">
+                    <img
+                        src="https://www.creativefabrica.com/wp-content/uploads/2021/09/21/Fast-Delivery-Icon-Graphics-17621993-1.jpg">
+                </div>
+                <h3>FREE AND FAST DELIVERY</h3>
+                <p>Free delivery for all orders over ฿140</p>
+            </div>
+            <div class="features-text">
+                <div class="icon">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/module-icon/service-66.png">
+                </div>
+                <h3>24/7 CUSTOMER SERVICE</h3>
+                <p>Friendly 24/7 customer support</p>
+            </div>
+            <div class="features-text">
+                <div class="icon">
+                    <img src="https://th.bing.com/th/id/OIP.1Bt9hIKWmeUnzAuZT8xC8wAAAA?rs=1&pid=ImgDetMain">
+                </div>
+                <h3>MONEY BACK GUARANTEE</h3>
+                <p>We return money within 30 days</p>
+            </div>
+        </section>
+
+        <h2>Main branch of Jelly Bunny</h2>
+        <iframe width="100%" height="400" style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCv0-1cJxCdo2jXibSkjQtN-DlvVIPVoZo&q=Jelly+Bunny+Zpell+Rangsit">
+        </iframe>
+
+    </main>
+
+    <script>
+
+        fetch("http://localhost:8000/best-selling")
+            .then(response => response.json())
+            .then(data => {
+                const productGrid = document.querySelector('.best-selling-grid');
+                productGrid.innerHTML = '';
+
+                data.forEach(product => {
+                    const productCard = document.createElement('article');
+                    productCard.classList.add('product-card2');
+                    productCard.style.cursor = 'pointer';
+
+                    const productImageContainer = document.createElement('div');
+                    productImageContainer.classList.add('product-image-container');
+
+                    const productImage = document.createElement('img');
+                    productImage.classList.add('product-image');
+                    productImage.src = product.prod_pic1;
+
+                    const productBadge = document.createElement('div');
+                    productBadge.classList.add('product-badge');
+                    productBadge.textContent = product.status;
+
+                    productImageContainer.appendChild(productImage);
+                    productImageContainer.appendChild(productBadge);
+
+                    const productName = document.createElement('h3');
+                    productName.classList.add('product-name');
+                    productName.textContent = product.prod_name;
+
+                    const productPrice = document.createElement('div');
+                    productPrice.classList.add('product-price');
+                    productPrice.textContent = `฿${product.prod_price}`;
+
+                    productCard.appendChild(productImageContainer);
+                    productCard.appendChild(productName);
+                    productCard.appendChild(productPrice);
+
+
+                    productCard.addEventListener('click', () => {
+                        window.location.href = `/detail-page?id=${product.prod_ID}`;
+                    });
+
+                    productGrid.appendChild(productCard);
+                });
+            })
+            .catch(error => console.error('Error fetching best-selling products:', error));
+
+
+        fetch("http://localhost:8000/new-products")
+            .then(response => response.json())
+            .then(data => {
+                const productGrid = document.querySelector('.new-arrivals-grid');
+                productGrid.innerHTML = '';
+
+                data.forEach(product => {
+                    const productCard = document.createElement('article');
+                    productCard.classList.add('product-card1');
+                    productCard.style.cursor = 'pointer';
+
+                    const productImageContainer = document.createElement('div');
+                    productImageContainer.classList.add('product-image-container');
+
+                    const productImage = document.createElement('img');
+                    productImage.classList.add('product-image');
+                    productImage.src = product.prod_pic1;
+
+                    const productBadge = document.createElement('div');
+                    productBadge.classList.add('product-badge');
+                    productBadge.textContent = product.status;
+
+                    productImageContainer.appendChild(productImage);
+                    productImageContainer.appendChild(productBadge);
+
+                    const productName = document.createElement('h3');
+                    productName.classList.add('product-name');
+                    productName.textContent = product.prod_name;
+
+                    const productPrice = document.createElement('div');
+                    productPrice.classList.add('product-price');
+                    productPrice.textContent = `฿${product.prod_price}`;
+
+                    productCard.appendChild(productImageContainer);
+                    productCard.appendChild(productName);
+                    productCard.appendChild(productPrice);
+
+
+                    productCard.addEventListener('click', () => {
+                        window.location.href = `/detail-page?id=${product.prod_ID}`;
+                    });
+
+                    productGrid.appendChild(productCard);
+                });
+            })
+            .catch(error => console.error('Error fetching new products:', error));
+
+
+    </script>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Customer Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Store Location</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Terms of Conditions</a></li>
+                    <li><a href="#">Provacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column news">
+                <h4>Newsletter</h4>
+                <p>Sign up to receive offers:</p>
+                <input type="email" placeholder="Enter your email" />
+            </div>
+        </div>
+        <p class="copyright">&copy; Copyright JellyBunny, all rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
