@@ -2,8 +2,9 @@
 ## 👋 About Me
 
 I am a third-year **Information and Communication Technology (ICT)** student at **Mahidol University**, specializing in **Database Systems**.  
-I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems.  
-I like turning class knowledge into hands-on projects and continuously improving my technical skills.
+I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
+
+📍 Nonthaburi, Thailand
 
 ---
 
