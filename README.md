@@ -19,8 +19,11 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Designed a **star schema data warehouse** with clear fact table grain  
 - Created documentation such as **dimensional models and a data dictionary**
 
-**Project Status:** *Phase 1 – Design in progress (ETL & implementation planned for next phase)*  
-📌 **Project:** *Currently in progress* 
+⏳ **Project Status:**  Currently working on Phase 1 (Data Warehouse design)  
+(Phase 2: BI dashboards and analytics planned)
+
+📌  **View Project:** 
+*Currently in progress* 
 
 ---
 
@@ -33,7 +36,8 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Improved data accuracy and query performance using constraints and indexing  
 - Prepared data for future analytical reporting
   
-⏳ Phase 1 completed — Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and transaction support)
+⏳**Project Status:**  Phase 1 completed 
+Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and transaction support)
 📌 **View Project:**  
  [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
