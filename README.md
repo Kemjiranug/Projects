@@ -15,28 +15,32 @@ My projects apply theoretical knowledge to practical use cases, including data m
 ## Projects in This Repository
 
 ### 1. Toyota Sales & Operations Data Warehouse (Phase 1)
-(Data Warehouse & Analytics Project)
-📅 Duration: 01/2026 – Present
-Analyzed Toyota’s business context to identify analytical and decision-making requirements
-Defined key KPIs, facts, and dimensions to support sales and operations analysis
-Designed a dimensional data warehouse using a star schema, including fact table grain and dimension structures
-Developed data warehouse design artifacts such as dimensional models and a data dictionary
-Prepared the foundation for future ETL processes and analytical reporting
-📌 View Project:
-👉 Toyota Sales & Operations Data Warehouse
+*(Data Warehouse & Analytics Project)*  
+📅 **Duration:** 01/2026 – Present  
+
+- Analyzed Toyota’s business context to identify analytical and decision-making requirements  
+- Defined key KPIs, facts, and dimensions to support sales and operations analysis  
+- Designed a dimensional data warehouse using a star schema, including fact table grain and dimension structures  
+- Developed data warehouse design artifacts such as dimensional models and a data dictionary  
+- Prepared the foundation for future ETL processes and analytical reporting  
+
+📌 **View Project:**  
+👉 [Toyota Sales & Operations Data Warehouse](./Toyota%20Sales%20%26%20Operations%20Data%20Warehouse)
 
 ---
 
 ### 2. Restaurant Inventory Management Database
-(Data Analysis & Database Design Project)
-📅 Duration: 01/2026 – Present
-Analyzed restaurant order and inventory data to support operational and analytical needs
-Translated business requirements into a clean, normalized (3NF) relational schema
-Performed exploratory data analysis (EDA) using SQL to examine order trends, ingredient usage, and inventory turnover
-Evaluated data quality and query performance using constraints and indexing
-Prepared transactional data for analytical reporting and future data warehouse integration
-📌 View Project:
-👉 Restaurant Inventory Management Database
+*(Data Analysis & Database Design Project)*  
+📅 **Duration:** 01/2026 – Present  
+
+- Analyzed restaurant order and inventory data to support operational and analytical needs  
+- Translated business requirements into a clean, normalized (3NF) relational schema  
+- Performed exploratory data analysis (EDA) using SQL to examine order trends, ingredient usage, and inventory turnover  
+- Evaluated data quality and query performance using constraints and indexing  
+- Prepared transactional data for analytical reporting and future data warehouse integration  
+
+📌 **View Project:**  
+👉 [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
 ---
 
