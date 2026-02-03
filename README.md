@@ -1,7 +1,7 @@
 
 ## 👋 About Me
 
-I am a third-year **Information and Communication Technology (ICT)** student at **Mahidol University**, specializing in **Database Systems**.  
+I am a third-year student in the **Faculty of Information and Communication Technology** at **Mahidol University**, specializing in **Database Systems**.  
 I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
 
 📍 Nonthaburi, Thailand
@@ -19,7 +19,8 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Designed a **star schema data warehouse** with clear fact table grain  
 - Created documentation such as **dimensional models and a data dictionary**
 
-📌 **Currently in progress**  
+**Project Status:** *Phase 1 – Design in progress (ETL & implementation planned for next phase)*  
+📌 **Project:** *Currently in progress* 
 
 ---
 
@@ -30,8 +31,9 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Designed a **normalized (3NF) database schema** based on business needs  
 - Used **SQL** to explore order trends, inventory usage, and turnover  
 - Improved data accuracy and query performance using constraints and indexing  
-- Prepared data for future analytical reporting  
-
+- Prepared data for future analytical reporting
+  
+⏳ Phase 1 completed — Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and transaction support)
 📌 **View Project:**  
  [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
