@@ -1,31 +1,24 @@
-# My GitHub Portfolio
 
-Welcome to my GitHub Portfolio!  
-This repository showcases my academic and practical projects in Database Systems, Data Analysis, and Data Engineering, demonstrating my ability to work with data-driven systems and solve real-world problems using structured and analytical approaches.
+## 👋 About Me
 
----
-
-## About Me
-
-I am a third-year Information and Communication Technology (ICT) student at Mahidol University, specializing in Database Systems. I am focused on Data Analysis and Data Engineering, with a strong interest in managing, processing, and analyzing data to support effective decision-making.
-My projects apply theoretical knowledge to practical use cases, including data modeling, database design and optimization, data processing, and analytical reporting. I enjoy working across the data workflow—from organizing and preparing data to extracting insights—while building reliable and efficient data systems.
+I am a third-year **Information and Communication Technology (ICT)** student at **Mahidol University**, specializing in **Database Systems**.  
+I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems.  
+I like turning class knowledge into hands-on projects and continuously improving my technical skills.
 
 ---
 
-## Projects in This Repository
+## 📂 Projects in This Repository
 
 ### 1. Toyota Sales & Operations Data Warehouse (Phase 1)
 *(Data Warehouse & Analytics Project)*  
 📅 **Duration:** 01/2026 – Present  
 
-- Analyzed Toyota’s business context to identify analytical and decision-making requirements  
-- Defined key KPIs, facts, and dimensions to support sales and operations analysis  
-- Designed a dimensional data warehouse using a star schema, including fact table grain and dimension structures  
-- Developed data warehouse design artifacts such as dimensional models and a data dictionary  
-- Prepared the foundation for future ETL processes and analytical reporting  
+- Analyzed business requirements to understand sales and operations decision needs  
+- Defined key **KPIs, facts, and dimensions** for analysis  
+- Designed a **star schema data warehouse** with clear fact table grain  
+- Created documentation such as **dimensional models and a data dictionary**
 
-📌 **View Project:**  
-👉 [Toyota Sales & Operations Data Warehouse](./Toyota%20Sales%20%26%20Operations%20Data%20Warehouse)
+📌 **Currently in progress:**  
 
 ---
 
@@ -33,97 +26,64 @@ My projects apply theoretical knowledge to practical use cases, including data m
 *(Data Analysis & Database Design Project)*  
 📅 **Duration:** 01/2026 – Present  
 
-- Analyzed restaurant order and inventory data to support operational and analytical needs  
-- Translated business requirements into a clean, normalized (3NF) relational schema  
-- Performed exploratory data analysis (EDA) using SQL to examine order trends, ingredient usage, and inventory turnover  
-- Evaluated data quality and query performance using constraints and indexing  
-- Prepared transactional data for analytical reporting and future data warehouse integration  
+- Designed a **normalized (3NF) database schema** based on business needs  
+- Used **SQL** to explore order trends, inventory usage, and turnover  
+- Improved data accuracy and query performance using constraints and indexing  
+- Prepared data for future analytical reporting  
 
 📌 **View Project:**  
 👉 [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
 ---
 
-### 3. Alzheimer’s Disease Pattern Analysis 
+### 3. Alzheimer’s Disease Pattern Analysis
 *(Data Analysis & Visualization)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
-- Performed exploratory data analysis to identify cognitive decline patterns  
+- Explored cognitive decline patterns using **EDA**  
 - Applied **PCA** and **t-SNE** for dimensionality reduction  
-- Analyzed key factors such as **MMSE scores, memory complaints, and behavioral problems**  
-- Built visualizations to compare linear and non-linear embedding techniques  
+- Created visualizations to compare different analysis techniques  
 
 📌 **View Project:**  
- [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
+👉 [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
 
 ---
 
-### 4. Character Search System 
+### 4. Character Search System
 *(Information Retrieval & Search Engine)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
-- Developed an **Elasticsearch-based system** for retrieving character images  
-- Debugged image loading issues and optimized preprocessing for CDN-hosted images  
-- Analyzed query behavior including **lexical matching, fuzzy search, and semantic retrieval**  
-- Implemented ranking based on importance values  
+- Built an **Elasticsearch-based search system**  
+- Analyzed lexical, fuzzy, and semantic query behavior  
+- Implemented basic ranking logic for search results  
 
 📌 **View Project:**  
- [Character Search System](./Character%20Search%20System%20/Code)
+👉 [Character Search System](./Character%20Search%20System%20/Code)
 
 ---
 
-### 5. Database Design and Implementation 
-*(Relational Database System)*  
-📅 **Duration:** 01/2024 – 02/2024  
+### 5. 📁 Other Projects (Browse)
 
-- Designed a **conceptual ER model** and transformed it into a **normalized relational schema**  
-- Implemented the database with schema creation, data entry forms, and reports  
-- Applied **indexing techniques** to optimize query performance  
-- Conducted **transaction analysis** to evaluate efficiency before and after optimization  
+📁 **Database Design and Implementation**  
+👉 [Browse Folder](./Database%20Design%20and%20Implementation)
 
-📌 **View Project:**  
- [Database Design and Implementation](./Database%20Design%20and%20Implementation)
+📁 **Information Systems Analysis and Prototype**  
+👉 [Browse Folder](./Information%20Systems%20Analysis%20and%20Prototype)
 
----
-
-### 6. Information Systems Analysis and Prototype 
-*(System Analysis & UI/UX Prototype)*  
-📅 **Duration:** 02/2025 – 04/2025  
-
-- Developed a **Figma prototype** for an Information Systems course  
-- Designed system workflows, data flow, and user interaction processes  
-- Tested interactive UI components for real-world scenarios  
-- Improved information hierarchy based on user tasks and system priorities  
-
-📌 **View Project:**  
- [Information Systems Analysis and Prototype](./Information%20Systems%20Analysis%20and%20Prototype)
+📁 **E-commerce Web Application**  
+👉 [Browse Folder](./E-commerce%20Web%20Application)
 
 ---
 
-### 7. E-commerce Web Application 
-*(Full-Stack Web Application)*  
-📅 **Duration:** 02/2024 – 04/2024  
+## 🧭 How to Use This Repository
 
-- Built a **full-stack e-commerce platform** with user authentication and product management  
-- Developed backend APIs using **Node.js and Express.js**, tested with **Postman**  
-- Designed frontend using **HTML, CSS, and JavaScript**  
-- Optimized database structure using **SQL**  
-- Integrated **Google Translate API** for multilingual support  
-
-📌 **View Project:**  
- [E-commerce Web Application](./E-commerce%20Web%20Application)
+1. Browse project folders using the links above  
+2. Each project contains source code, reports, or documentation  
+3. Projects are for learning and skill development purposes  
 
 ---
 
-##  How to Use This Repository
+## 📬 Connect with Me
 
-1. Browse through the project folders  
-2. Each project contains its own documentation or source code  
-3. Feel free to fork or explore the projects for learning purposes  
-
----
-
-## Connect with Me
-
-- 📧 **Email:** [nug.kemjira@gmail.com](mailto:nug.kemjira@gmail.com)  
-- 🔗 **LinkedIn:** [https://www.linkedin.com/in/kemjira-nugboon](https://www.linkedin.com/in/kemjira-nugboon)
+- 📧 **Email:** nug.kemjira@gmail.com  
+- 🔗 **LinkedIn:** https://www.linkedin.com/in/kemjira-nugboon
