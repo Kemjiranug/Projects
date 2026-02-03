@@ -18,7 +18,7 @@ I like turning class knowledge into hands-on projects and continuously improving
 - Designed a **star schema data warehouse** with clear fact table grain  
 - Created documentation such as **dimensional models and a data dictionary**
 
-📌 **Currently in progress:**  
+📌 **Currently in progress**  
 
 ---
 
@@ -32,7 +32,7 @@ I like turning class knowledge into hands-on projects and continuously improving
 - Prepared data for future analytical reporting  
 
 📌 **View Project:**  
-👉 [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
+ [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
 ---
 
@@ -45,7 +45,7 @@ I like turning class knowledge into hands-on projects and continuously improving
 - Created visualizations to compare different analysis techniques  
 
 📌 **View Project:**  
-👉 [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
+ [Alzheimer’s Disease Pattern Analysis](./Alzheimer’s%20Disease%20Pattern%20Analysis)
 
 ---
 
@@ -58,20 +58,20 @@ I like turning class knowledge into hands-on projects and continuously improving
 - Implemented basic ranking logic for search results  
 
 📌 **View Project:**  
-👉 [Character Search System](./Character%20Search%20System%20/Code)
+ [Character Search System](./Character%20Search%20System%20/Code)
 
 ---
 
 ### 5. 📁 Other Projects (Browse)
 
 📁 **Database Design and Implementation**  
-👉 [Browse Folder](./Database%20Design%20and%20Implementation)
+ [Browse Folder](./Database%20Design%20and%20Implementation)
 
 📁 **Information Systems Analysis and Prototype**  
-👉 [Browse Folder](./Information%20Systems%20Analysis%20and%20Prototype)
+ [Browse Folder](./Information%20Systems%20Analysis%20and%20Prototype)
 
 📁 **E-commerce Web Application**  
-👉 [Browse Folder](./E-commerce%20Web%20Application)
+ [Browse Folder](./E-commerce%20Web%20Application)
 
 ---
 
