@@ -1,19 +1,46 @@
 # My GitHub Portfolio
 
 Welcome to my GitHub Portfolio!  
-This repository showcases my academic and practical projects in **Database Systems, Data Analysis, Information Retrieval, Web Development, and Machine Learning**, demonstrating my technical skills and problem-solving abilities.
+This repository showcases my academic and practical projects in Database Systems, Data Analysis, and Data Engineering, demonstrating my ability to work with data-driven systems and solve real-world problems using structured and analytical approaches.
 
 ---
 
 ## About Me
 
-I am a third-year Information and Communication Technology (ICT) student at Mahidol University, specializing in Database Systems. I have a strong interest in data-driven applications, system analysis, information retrieval, and full-stack development. My projects emphasize applying theoretical knowledge to real-world scenarios, including database optimization, data analysis, and web application development.
+I am a third-year Information and Communication Technology (ICT) student at Mahidol University, specializing in Database Systems. I am focused on Data Analysis and Data Engineering, with a strong interest in managing, processing, and analyzing data to support effective decision-making.
+My projects apply theoretical knowledge to practical use cases, including data modeling, database design and optimization, data processing, and analytical reporting. I enjoy working across the data workflow—from organizing and preparing data to extracting insights—while building reliable and efficient data systems.
 
 ---
 
 ## Projects in This Repository
 
-### 1. Alzheimer’s Disease Pattern Analysis 
+### 1. Toyota Sales & Operations Data Warehouse (Phase 1)
+(Data Warehouse & Analytics Project)
+📅 Duration: 01/2026 – Present
+Analyzed Toyota’s business context to identify analytical and decision-making requirements
+Defined key KPIs, facts, and dimensions to support sales and operations analysis
+Designed a dimensional data warehouse using a star schema, including fact table grain and dimension structures
+Developed data warehouse design artifacts such as dimensional models and a data dictionary
+Prepared the foundation for future ETL processes and analytical reporting
+📌 View Project:
+👉 Toyota Sales & Operations Data Warehouse
+
+---
+
+### 2. Restaurant Inventory Management Database
+(Data Analysis & Database Design Project)
+📅 Duration: 01/2026 – Present
+Analyzed restaurant order and inventory data to support operational and analytical needs
+Translated business requirements into a clean, normalized (3NF) relational schema
+Performed exploratory data analysis (EDA) using SQL to examine order trends, ingredient usage, and inventory turnover
+Evaluated data quality and query performance using constraints and indexing
+Prepared transactional data for analytical reporting and future data warehouse integration
+📌 View Project:
+👉 Restaurant Inventory Management Database
+
+---
+
+### 3. Alzheimer’s Disease Pattern Analysis 
 *(Data Analysis & Visualization)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -27,7 +54,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 2. Character Search System 
+### 4. Character Search System 
 *(Information Retrieval & Search Engine)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -41,7 +68,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 3. Database Design and Implementation 
+### 5. Database Design and Implementation 
 *(Relational Database System)*  
 📅 **Duration:** 01/2024 – 02/2024  
 
@@ -55,7 +82,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 4. Information Systems Analysis and Prototype 
+### 6. Information Systems Analysis and Prototype 
 *(System Analysis & UI/UX Prototype)*  
 📅 **Duration:** 02/2025 – 04/2025  
 
@@ -69,7 +96,7 @@ I am a third-year Information and Communication Technology (ICT) student at Mahi
 
 ---
 
-### 5. E-commerce Web Application 
+### 7. E-commerce Web Application 
 *(Full-Stack Web Application)*  
 📅 **Duration:** 02/2024 – 04/2024  
 
