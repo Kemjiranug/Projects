@@ -20,7 +20,6 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 
 ⏳ **Project Status:**  
 Phase 1 in progress (Data Warehouse analysis & design)
-
 Phase 2: BI dashboards and analytics planned
 
 📌  **View Project:** 
@@ -39,7 +38,6 @@ Phase 2: BI dashboards and analytics planned
   
 ⏳**Project Status:**  
 Phase 1 completed (Relational database design & analysis)
-
 Phase 2 in progress (Conceptual data modeling: ERD, keys, constraints, transactions)
 
 
