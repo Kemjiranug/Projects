@@ -4,7 +4,6 @@
 I am a third-year student in the **Faculty of Information and Communication Technology** at **Mahidol University**, specializing in **Database Systems**.  
 I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
 
-📍 Nonthaburi, Thailand
 
 ---
 
@@ -38,6 +37,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
   
 ⏳**Project Status:**  Phase 1 completed 
 Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and transaction support)
+
 📌 **View Project:**  
  [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
 
