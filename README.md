@@ -1,5 +1,5 @@
 
-## 👋 About Me
+##  About Me
 
 I am a third-year student in the **Faculty of Information and Communication Technology** at **Mahidol University**, specializing in **Database Systems**.  
 I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
@@ -7,7 +7,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 
 ---
 
-## 📂 Projects in This Repository
+##  Projects in This Repository
 
 ### 1. Toyota Sales & Operations Data Warehouse (Phase 1)
 *(Data Warehouse & Analytics Project)*  
@@ -69,7 +69,7 @@ Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and tran
 
 ---
 
-### 5. 📁 Other Projects (Browse)
+### 5.  Other Projects (Browse)
 
 📁 **Database Design and Implementation**  
  [Browse Folder](./Database%20Design%20and%20Implementation)
@@ -82,7 +82,7 @@ Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and tran
 
 ---
 
-## 🧭 How to Use This Repository
+##  How to Use This Repository
 
 1. Browse project folders using the links above  
 2. Each project contains source code, reports, or documentation  
@@ -90,7 +90,7 @@ Phase 2 in progress  (Conceptual data modeling: ERD, keys, constraints, and tran
 
 ---
 
-## 📬 Connect with Me
+##  Connect with Me
 
-- 📧 **Email:** nug.kemjira@gmail.com  
-- 🔗 **LinkedIn:** https://www.linkedin.com/in/kemjira-nugboon
+-  **Email:** nug.kemjira@gmail.com  
+-  **LinkedIn:** https://www.linkedin.com/in/kemjira-nugboon
