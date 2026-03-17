@@ -3,7 +3,6 @@
 
 📅 Duration: Mar 2026  
 
----
 
 ### 📌 Overview  
 This project focuses on analyzing sales performance using an interactive Power BI dashboard. The goal is to transform raw transactional data into meaningful insights to support business decision-making.
