@@ -52,12 +52,12 @@ Phase 2: in progress BI dashboards and analytics planned
 - Improved data accuracy and query performance using constraints and indexing  
 - Prepared data for future analytical reporting
   
-⏳**Project Status:** 
+⏳ **Project Status:**
 
-Phase 1 completed (Relational database design & analysis)
-Phase 2 completed (Conceptual data modeling: ERD, keys, constraints, transactions)
-Phase 3 completed (Logical database design: relational schema, normalization, and relationships)
-Phase 4 in progress (SQL implementation: DDL, constraints, and data queries)
+- Phase 1 completed (Relational database design & analysis)  
+- Phase 2 completed (Conceptual data modeling: ERD, keys, constraints, transactions)  
+- Phase 3 completed (Logical database design: relational schema, normalization, and relationships)  
+- Phase 4 in progress (SQL implementation: DDL, constraints, and data queries)
 
 📌 **View Project:**  
  [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
