@@ -32,7 +32,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Data Analysis  
 
 📌 **View Project:**  
-[[Blinkit Sales Dashboard](./Blinkit%20Sales%20Dashboard)]
+[[Blinkit Sales Dashboard](./blinkit%20sales%20dashboard)]
 
 
 ### 2. Toyota Sales & Operations Data Warehouse (Phase 1)
@@ -45,8 +45,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Created documentation such as **dimensional models and a data dictionary**
 
 ⏳ **Project Status:**  
-Phase 1 in progress (Data Warehouse analysis & design)
-Phase 2: BI dashboards and analytics planned
+Phase 2: in progress BI dashboards and analytics planned
 
 📌  **View Project:** 
 *Currently in progress* 
