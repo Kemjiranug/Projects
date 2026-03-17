@@ -21,19 +21,10 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Implemented **interactive filters** (date range) to enable dynamic analysis  
 - Derived actionable **business insights** from data to support decision-making  
 
-🔍 **Key Insights:**  
-- Revenue peaks during mid-year (July–August), indicating seasonal demand  
-- Majority of orders are delivered on time, reflecting strong operational performance  
-- A small group of customers contributes significantly to total revenue  
-
-🛠 **Tools Used:**  
-- Microsoft Power BI  
-- Data Visualization  
-- Data Analysis  
-
 📌 **View Project:**  
-[[Blinkit Sales Dashboard](./blinkit%20sales%20dashboard)]
+[Blinkit Sales Dashboard](./blinkit%20sales%20dashboard)
 
+---
 
 ### 2. Toyota Sales & Operations Data Warehouse (Phase 1)
 *(Data Warehouse & Analytics Project)*  
@@ -48,7 +39,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 Phase 2: in progress BI dashboards and analytics planned
 
 📌  **View Project:** 
-*Currently in progress* 
+[Toyota Sales & Operations Data Warehouse](./Toyota%20Sales%20%26%20Operations%20Data%20Warehouse)
 
 ---
 
