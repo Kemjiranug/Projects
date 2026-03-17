@@ -3,12 +3,12 @@
 
 📅 Duration: Mar 2026  
 
-
+---
 
 ### Overview  
-This project focuses on analyzing sales performance using an interactive Power BI dashboard. The goal is to transform raw transactional data into meaningful insights to support business decision-making.
+This project analyzes sales performance using an interactive Power BI dashboard. It transforms raw transactional data into meaningful insights to support business decision-making.
 
-
+---
 
 ### Dashboard Preview  
 
@@ -17,33 +17,33 @@ This project focuses on analyzing sales performance using an interactive Power B
 </p>
 
 <p align="center">
-  <em>Interactive dashboard showing KPIs, sales trends, and customer insights</em>
+  <em>Dashboard showing key KPIs, sales trends, and customer insights</em>
 </p>
 
-
+---
 
 ### Key Features  
 - Developed an interactive dashboard to analyze sales and customer behavior  
-- Defined key KPIs such as Total Orders, Average Order Value (AOV), and Total Revenue  
+- Defined key KPIs (Total Orders, Average Order Value, Total Revenue)  
 - Analyzed monthly revenue trends to identify seasonal patterns  
 - Built visualizations for delivery performance, payment methods, and customer segments  
 - Enabled dynamic analysis using interactive filters (e.g., date range)
 
-
+---
 
 ### Key Insights  
-- Revenue peaks during mid-year, indicating seasonal demand  
-- High on-time delivery rate reflects efficient operations  
-- Revenue is concentrated among a small group of customers  
+- Mid-year revenue peak indicates seasonal demand  
+- Strong on-time delivery performance  
+- Revenue concentrated among a small customer segment  
 
-
+---
 
 ### Tools Used  
 - Microsoft Power BI  
 - Data Visualization  
 - Data Analysis  
 
-
+---
 
 ### Project Structure  
 - Dashboard (.pbix file)  
