@@ -39,6 +39,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 Phase 2: in progress BI dashboards and analytics planned
 
 📌  **View Project:** 
+
 [Toyota Sales & Operations Data Warehouse](./Toyota%20Sales%20%26%20Operations%20Data%20Warehouse)
 
 ---
