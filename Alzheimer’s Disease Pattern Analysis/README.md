@@ -5,15 +5,15 @@
 
 ---
 
-### 📌 Overview  
+### Overview  
 This project explores patterns of cognitive decline using data analysis and visualization techniques to better understand Alzheimer’s disease.
 
 ---
 
-### 📊 Visualization  
+### Visualization  
 
 <p align="center">
-  <img src="./memory-complaints.png" width="600"/>
+  <img src="./Memory complaints.png" width="600"/>
 </p>
 
 <p align="center">
@@ -22,21 +22,21 @@ This project explores patterns of cognitive decline using data analysis and visu
 
 ---
 
-### 📊 Key Features  
+### Key Features  
 - Performed exploratory data analysis (EDA) on cognitive and behavioral data  
 - Applied PCA and t-SNE for dimensionality reduction  
 - Visualized patterns to compare linear and nonlinear representations  
 
 ---
 
-### 🔍 Key Insights  
+### Key Insights  
 - PCA shows no clear separation between Alzheimer’s and non-Alzheimer groups, indicating complex underlying patterns  
 - t-SNE reveals clearer clustering and local structure in the data  
 - Results suggest that Alzheimer’s patterns are better captured using nonlinear approaches  
 
 ---
 
-### 🛠 Tools Used  
+### Tools Used  
 - Python  
 - Pandas, NumPy  
 - Matplotlib / Seaborn  
@@ -44,7 +44,7 @@ This project explores patterns of cognitive decline using data analysis and visu
 
 ---
 
-### 📁 Project Structure  
+### Project Structure  
 - Jupyter notebooks  
 - Dataset  
 - Visualizations  
