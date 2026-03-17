@@ -44,7 +44,7 @@ This project focuses on building a search system to efficiently retrieve charact
 
 ---
 
-### 📁 Project Structure  
+### Project Structure  
 - Source code  
 - Search configuration  
 - Sample queries and results  
