@@ -32,7 +32,7 @@ This project focuses on designing a data warehouse to support sales and operatio
 
 ---
 
-### 🛠 Tools Used  
+### Tools Used  
 - SQL  
 - Data Modeling  
 - Data Warehousing Concepts  
