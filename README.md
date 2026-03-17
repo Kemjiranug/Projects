@@ -26,7 +26,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 
 ---
 
-### 2. Toyota Sales & Operations Data Warehouse (Phase 1)
+### 2. Toyota Sales & Operations Data Warehouse
 *(Data Warehouse & Analytics Project)*  
 📅 **Duration:** 01/2026 – Present  
 
