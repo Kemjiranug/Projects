@@ -17,7 +17,7 @@ This project explores patterns of cognitive decline using data analysis and visu
 </p>
 
 <p align="center">
-  <em>t-SNE visualization showing clustering patterns between Alzheimer’s and non-Alzheimer groups</em>
+  <em>t-SNE visualization highlighting clustering patterns based on memory complaints, revealing nonlinear structure in the data</em>
 </p>
 
 ---
