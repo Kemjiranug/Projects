@@ -17,6 +17,7 @@ This project focuses on designing and implementing a relational database system 
 <p align="center">
   <em>Entity-Relationship Diagram illustrating the restaurant inventory and order management system, including staff, orders, menu, ingredients, suppliers, and inventory processes</em>
 </p>
+
 ---
 
 ### Key Features  
