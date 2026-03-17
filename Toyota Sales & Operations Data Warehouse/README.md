@@ -8,6 +8,16 @@
 ### Overview  
 This project focuses on designing a data warehouse to support sales and operations analysis. It transforms raw data into a structured format suitable for reporting and analytics.
 
+
+### Data Model  
+
+<p align="center">
+  <img src="./toyota-star-schema.png" width="700"/>
+</p>
+
+<p align="center">
+  <em>Star schema for sales and operations analysis, with Fact_Sales connected to key dimensions including customer, car, dealership, salesperson, promotion, payment method, and date</em>
+</p>
 ---
 
 ### Key Features  
