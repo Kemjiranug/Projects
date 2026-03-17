@@ -18,6 +18,7 @@ This project focuses on designing a data warehouse to support sales and operatio
 <p align="center">
   <em>Star schema for sales and operations analysis, with Fact_Sales connected to key dimensions including customer, car, dealership, salesperson, promotion, payment method, and date</em>
 </p>
+
 ---
 
 ### Key Features  
