@@ -22,7 +22,7 @@ I am interested in **Data Analysis and Data Engineering**, and enjoy learning ho
 - Derived actionable **business insights** from data to support decision-making  
 
 📌 **View Project:**  
-[Blinkit Sales Dashboard](./blinkit%20sales%20dashboard)
+[Blinkit Sales Dashboard](./blinkit-sales-dashboard)
 
 ---
 
@@ -54,8 +54,9 @@ Phase 2: in progress BI dashboards and analytics planned
   
 ⏳**Project Status:**  
 Phase 1 completed (Relational database design & analysis)
-Phase 2 in progress (Conceptual data modeling: ERD, keys, constraints, transactions)
-
+Phase 2 completed (Conceptual data modeling: ERD, keys, constraints, transactions)
+Phase 3 completed (Logical database design: relational schema, normalization, and relationships)
+Phase 4 in progress (SQL implementation: DDL, constraints, and data queries)
 
 📌 **View Project:**  
  [Restaurant Inventory Management Database](./Restaurant%20Inventory%20Management%20Database)
