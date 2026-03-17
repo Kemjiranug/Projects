@@ -2,14 +2,40 @@
 ##  About Me
 
 I am a third-year student in the **Faculty of Information and Communication Technology** at **Mahidol University**, specializing in **Database Systems**.  
-I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data—from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
+I am interested in **Data Analysis and Data Engineering**, and enjoy learning how to work with data from organizing and modeling data to analyzing results and building reliable data systems. I like turning class knowledge into hands-on projects and continuously improving my technical skills.
 
 
 ---
 
 ##  Projects in This Repository
 
-### 1. Toyota Sales & Operations Data Warehouse (Phase 1)
+
+### 1. Blinkit Sales Dashboard (Power BI)
+*(Data Analytics & Visualization Project)*  
+📅 **Duration:** Mar 2026  
+
+- Designed and developed an interactive **Power BI dashboard** to analyze sales performance  
+- Created key business **KPIs** including Total Orders, Average Order Value, and Total Revenue  
+- Analyzed **monthly revenue trends** to identify seasonal patterns and peak periods  
+- Built visualizations for **payment methods, delivery status, and top customers**  
+- Implemented **interactive filters** (date range) to enable dynamic analysis  
+- Derived actionable **business insights** from data to support decision-making  
+
+🔍 **Key Insights:**  
+- Revenue peaks during mid-year (July–August), indicating seasonal demand  
+- Majority of orders are delivered on time, reflecting strong operational performance  
+- A small group of customers contributes significantly to total revenue  
+
+🛠 **Tools Used:**  
+- Microsoft Power BI  
+- Data Visualization  
+- Data Analysis  
+
+📌 **View Project:**  
+[[Blinkit Sales Dashboard](./Blinkit%20Sales%20Dashboard)]
+
+
+### 2. Toyota Sales & Operations Data Warehouse (Phase 1)
 *(Data Warehouse & Analytics Project)*  
 📅 **Duration:** 01/2026 – Present  
 
@@ -27,7 +53,7 @@ Phase 2: BI dashboards and analytics planned
 
 ---
 
-### 2. Restaurant Inventory Management Database
+### 3. Restaurant Inventory Management Database
 *(Data Analysis & Database Design Project)*  
 📅 **Duration:** 01/2026 – Present  
 
@@ -46,7 +72,7 @@ Phase 2 in progress (Conceptual data modeling: ERD, keys, constraints, transacti
 
 ---
 
-### 3. Alzheimer’s Disease Pattern Analysis
+### 4. Alzheimer’s Disease Pattern Analysis
 *(Data Analysis & Visualization)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -59,7 +85,7 @@ Phase 2 in progress (Conceptual data modeling: ERD, keys, constraints, transacti
 
 ---
 
-### 4. Character Search System
+### 5. Character Search System
 *(Information Retrieval & Search Engine)*  
 📅 **Duration:** 08/2025 – 11/2025  
 
@@ -72,7 +98,7 @@ Phase 2 in progress (Conceptual data modeling: ERD, keys, constraints, transacti
 
 ---
 
-### 5.  Other Projects (Browse)
+### 6.  Other Projects (Browse)
 
 📁 **Database Design and Implementation**  
  [Browse Folder](./Database%20Design%20and%20Implementation)
