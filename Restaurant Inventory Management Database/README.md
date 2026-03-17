@@ -8,6 +8,15 @@
 ### Overview  
 This project focuses on designing and implementing a relational database system for managing restaurant inventory and orders. It supports efficient data storage, querying, and future analytics.
 
+### Database Design  
+
+<p align="center">
+  <img src="./restaurant-erd.png" width="750"/>
+</p>
+
+<p align="center">
+  <em>Entity-Relationship Diagram illustrating the restaurant inventory and order management system, including staff, orders, menu, ingredients, suppliers, and inventory processes</em>
+</p>
 ---
 
 ### Key Features  
