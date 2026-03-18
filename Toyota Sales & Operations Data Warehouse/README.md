@@ -42,7 +42,7 @@ This project focuses on designing a data warehouse to support sales and operatio
 - Identified fact table grain to ensure consistent data aggregation  
 - Structured relationships between fact and dimension tables for efficient querying  
 - Applied basic data warehousing principles (e.g., dimensional modeling)  
-- Prepared schema for future BI dashboard integration  
+- Prepared schema for future dashboard development
 
 ---
 
