@@ -6,7 +6,8 @@
 ---
 
 ### Overview  
-This project analyzes sales performance using an interactive Power BI dashboard. It transforms raw transactional data into meaningful insights to support business decision-making.
+This project analyzes sales performance using an interactive Power BI dashboard. It transforms transactional data into clear insights to support business decision-making.  
+It focuses on identifying trends, customer behavior, and operational performance.
 
 ---
 
@@ -17,31 +18,38 @@ This project analyzes sales performance using an interactive Power BI dashboard.
 </p>
 
 <p align="center">
-  <em>Dashboard showing key KPIs, sales trends, and customer insights</em>
+  <em>Dashboard displaying key KPIs, revenue trends, and customer insights</em>
 </p>
 
 ---
 
 ### Key Features  
-- Developed an interactive dashboard to analyze sales and customer behavior  
-- Defined key KPIs (Total Orders, Average Order Value, Total Revenue)  
+- Built an interactive dashboard to analyze **4,025 orders and 8.84M revenue**  
+- Defined key KPIs including **Total Orders, Average Order Value, and Total Revenue**  
 - Analyzed monthly revenue trends to identify seasonal patterns  
-- Built visualizations for delivery performance, payment methods, and customer segments  
-- Enabled dynamic analysis using interactive filters (e.g., date range)
+- Visualized delivery performance, payment methods, and customer segments  
+- Enabled dynamic analysis through interactive filters (e.g., date range)
 
 ---
 
 ### Key Insights  
-- Mid-year revenue peak indicates seasonal demand  
-- Strong on-time delivery performance  
-- Revenue concentrated among a small customer segment  
+- Revenue peaks during mid-year, indicating seasonal demand patterns  
+- Majority of orders are delivered on time  
+- A small group of customers contributes a significant portion of total revenue  
+
+---
+
+### Technical Details  
+- Cleaned and transformed data within Power BI (Power Query)  
+- Created calculated measures using DAX (e.g., revenue aggregation, AOV)  
+- Applied basic data modeling to structure relationships between tables  
+- Designed visuals to highlight trends and support quick decision-making  
 
 ---
 
 ### Tools Used  
 - Microsoft Power BI  
-- Data Visualization  
-- Data Analysis  
+- Data Analysis & Visualization  
 
 ---
 
