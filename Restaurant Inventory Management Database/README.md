@@ -6,7 +6,9 @@
 ---
 
 ### Overview  
-This project focuses on designing and implementing a relational database system for managing restaurant inventory and orders. It supports efficient data storage, querying, and future analytics.
+This project focuses on designing and implementing a relational database system for managing restaurant inventory and orders. It supports efficient data storage, querying, and basic operational analysis.
+
+---
 
 ### Database Design  
 
@@ -22,9 +24,10 @@ This project focuses on designing and implementing a relational database system 
 
 ### Key Features  
 - Designed a normalized (3NF) relational database schema  
-- Modeled entities, relationships, and constraints  
-- Used SQL to analyze order trends and inventory usage  
-- Improved data integrity and query performance  
+- Modeled entities, relationships, and constraints using ER diagrams  
+- Structured tables to support order tracking and inventory management  
+- Wrote SQL queries for inventory tracking and basic reporting  
+- Improved data consistency and query efficiency  
 
 ---
 
@@ -32,15 +35,23 @@ This project focuses on designing and implementing a relational database system 
 1. Requirement analysis  
 2. Conceptual design (ERD)  
 3. Logical design (relational schema)  
-4. SQL implementation (in progress)
+4. SQL implementation (in progress)  
+
+---
+
+### Technical Details  
+- Defined primary and foreign keys to maintain referential integrity  
+- Applied normalization (up to 3NF) to reduce redundancy  
+- Designed relationships to support order and inventory workflows  
+- Prepared schema for efficient querying and reporting  
 
 ---
 
 ### Project Status  
-- Phase 1 completed (Relational database design & analysis)  
-- Phase 2 completed (Conceptual data modeling: ERD, keys, constraints, transactions)  
-- Phase 3 completed (Logical database design: schema & normalization)  
-- Phase 4 in progress (SQL implementation: DDL, constraints, queries)
+- Phase 1 completed (requirement analysis & system design)  
+- Phase 2 completed (ERD, keys, constraints)  
+- Phase 3 completed (relational schema & normalization)  
+- Phase 4 in progress (SQL implementation: DDL, constraints, queries)  
 
 ---
 
@@ -48,5 +59,3 @@ This project focuses on designing and implementing a relational database system 
 - SQL  
 - Database Design  
 - ER Modeling  
-
- 
