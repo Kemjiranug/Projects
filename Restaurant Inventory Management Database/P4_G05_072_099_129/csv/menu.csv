@@ -1,0 +1,76 @@
+﻿MenuID,Name,Description,Price,Category,Status
+mu0001,Fried Rice,Thai fried rice with egg,80,Main Course,Available
+mu0002,Pad Thai,Stir fried noodles with shrimp,90,Main Course,Available
+mu0003,Green Curry,Green curry with chicken,120,Main Course,Available
+mu0004,Red Curry,Red curry with pork,120,Main Course,Available
+mu0005,Tom Yum Soup,Spicy shrimp soup,150,Main Course,Available
+mu0006,Chicken Basil,Stir fried chicken with basil,85,Main Course,Available
+mu0007,Pork Basil,Stir fried pork with basil,85,Main Course,Available
+mu0008,Fried Chicken,Deep fried chicken,100,Main Course,Available
+mu0009,Grilled Pork,Thai grilled pork,110,Main Course,Available
+mu0010,Beef Noodle,Beef noodle soup,95,Main Course,Available
+mu0011,Spring Rolls,Crispy spring rolls,70,Appetizer,Available
+mu0012,Fried Tofu,Deep fried tofu,60,Appetizer,Available
+mu0013,Chicken Wings,Fried chicken wings,95,Appetizer,Available
+mu0014,Shrimp Cake,Thai shrimp cake,120,Appetizer,Available
+mu0015,Papaya Salad,Som tam,90,Appetizer,Available
+mu0016,Steamed Rice,Plain jasmine rice,20,Side,Available
+mu0017,Sticky Rice,Thai sticky rice,25,Side,Available
+mu0018,Omelette,Thai omelette,50,Side,Available
+mu0019,Egg Fried Rice,Fried rice with egg,70,Side,Available
+mu0020,Garlic Rice,Fried rice with garlic,75,Side,Available
+mu0021,Thai Milk Tea,Traditional Thai milk tea,45,Drink,Available
+mu0022,Lemon Tea,Iced lemon tea,40,Drink,Available
+mu0023,Black Coffee,Hot black coffee,40,Drink,Unavailable
+mu0024,Latte,Hot latte,55,Drink,Available
+mu0025,Cappuccino,Hot cappuccino,55,Drink,Available
+mu0026,Iced Coffee,Iced coffee,50,Drink,Available
+mu0027,Green Tea,Iced green tea,45,Drink,Available
+mu0028,Coke,Coca cola,30,Drink,Available
+mu0029,Sprite,Sprite soda,30,Drink,Available
+mu0030,Orange Juice,Fresh orange juice,50,Drink,Available
+mu0031,Mango Sticky Rice,Mango with sticky rice,120,Dessert,Available
+mu0032,Coconut Ice Cream,Thai coconut ice cream,80,Dessert,Available
+mu0033,Banana Fritter,Fried banana,70,Dessert,Available
+mu0034,Chocolate Cake,Chocolate cake slice,90,Dessert,Unavailable
+mu0035,Cheesecake,Cream cheesecake,95,Dessert,Available
+mu0036,Pad See Ew,Stir fried wide noodles,90,Main Course,Available
+mu0037,Chicken Noodle Soup,Chicken noodle soup,85,Main Course,Available
+mu0038,Seafood Fried Rice,Fried rice with seafood,110,Main Course,Unavailable
+mu0039,Shrimp Fried Rice,Fried rice with shrimp,105,Main Course,Available
+mu0040,Chicken Satay,Grilled chicken satay,120,Main Course,Available
+mu0041,Fish Cake,Thai fish cake,95,Appetizer,Available
+mu0042,Fried Shrimp,Deep fried shrimp,120,Appetizer,Available
+mu0043,Chicken Nuggets,Crispy chicken nuggets,85,Appetizer,Available
+mu0044,Garlic Bread,Toasted garlic bread,60,Appetizer,Available
+mu0045,Onion Rings,Fried onion rings,70,Appetizer,Available
+mu0046,Americano,Hot americano coffee,50,Drink,Unavailable
+mu0047,Mocha,Chocolate coffee mocha,60,Drink,Available
+mu0048,Caramel Latte,Latte with caramel,65,Drink,Available
+mu0049,Iced Chocolate,Cold chocolate drink,60,Drink,Available
+mu0050,Matcha Latte,Green tea latte,65,Drink,Available
+mu0051,Fruit Salad,Mixed fruit salad,70,Dessert,Available
+mu0052,Pancake,Fluffy pancake,80,Dessert,Available
+mu0053,Waffle,Crispy waffle,85,Dessert,Available
+mu0054,Brownie,Chocolate brownie,80,Dessert,Available
+mu0055,Ice Cream Sundae,Ice cream with topping,90,Dessert,Available
+mu0056,Grilled Chicken,Grilled chicken breast,110,Main Course,Available
+mu0057,BBQ Pork,BBQ pork slices,115,Main Course,Available
+mu0058,Spaghetti Carbonara,Creamy carbonara pasta,130,Main Course,Available
+mu0059,Spaghetti Bolognese,Beef tomato pasta,130,Main Course,Available
+mu0060,Seafood Spaghetti,Spaghetti with seafood,140,Main Course,Available
+mu0061,Chicken Burger,Grilled chicken burger,95,Main Course,Available
+mu0062,Beef Burger,Beef burger,105,Main Course,Available
+mu0063,Fish Burger,Fish fillet burger,95,Main Course,Available
+mu0064,French Fries,Crispy french fries,60,Side,Available
+mu0065,Cheese Fries,Fries with cheese,70,Side,Available
+mu0066,Milkshake,Vanilla milkshake,70,Drink,Available
+mu0067,Strawberry Smoothie,Fresh strawberry smoothie,75,Drink,Available
+mu0068,Mango Smoothie,Fresh mango smoothie,75,Drink,Unavailable
+mu0069,Blueberry Smoothie,Blueberry smoothie,80,Drink,Available
+mu0070,Lemon Soda,Sparkling lemon soda,50,Drink,Available
+mu0071,Thai Iced Espresso,Strong iced espresso Thai style,55,Drink,Available
+mu0072,Herbal Drink,Traditional Thai herbal drink,40,Drink,Unavailable
+mu0073,Fried Fish,Deep fried fish with sauce,130,Main Course,Available
+mu0074,Glass Noodle Salad,Spicy glass noodle salad,95,Appetizer,Available
+mu0075,Custard Bread,Sweet custard filled bread,65,Dessert,Available

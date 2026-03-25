@@ -1,0 +1,126 @@
+﻿ingredient_id,ingredient_name,unit,price_per_unit,minimum_stock_level
+ing0001,Rice,kg,40.00,10
+ing0002,Jasmine Rice,kg,45.00,10
+ing0003,Sticky Rice,kg,50.00,8
+ing0004,Chicken,kg,80.00,10
+ing0005,Pork,kg,90.00,10
+ing0006,Beef,kg,150.00,5
+ing0007,Shrimp,kg,120.00,5
+ing0008,Squid,kg,110.00,5
+ing0009,Fish,kg,100.00,5
+ing0010,Egg,piece,4.00,50
+ing0011,Garlic,kg,60.00,5
+ing0012,Onion,kg,30.00,5
+ing0013,Chili,kg,70.00,5
+ing0014,Basil,kg,40.00,3
+ing0015,Coriander,kg,40.00,3
+ing0016,Lime,kg,35.00,5
+ing0017,Lemon,kg,40.00,5
+ing0018,Tomato,kg,45.00,5
+ing0019,Cucumber,kg,30.00,5
+ing0020,Carrot,kg,25.00,5
+ing0021,Cabbage,kg,20.00,5
+ing0022,Broccoli,kg,50.00,5
+ing0023,Cauliflower,kg,45.00,5
+ing0024,Mushroom,kg,80.00,5
+ing0025,Corn,kg,35.00,5
+ing0026,Green Bean,kg,30.00,5
+ing0027,Spinach,kg,35.00,5
+ing0028,Pumpkin,kg,25.00,5
+ing0029,Sweet Potato,kg,30.00,5
+ing0030,Potato,kg,25.00,5
+ing0031,Milk,liter,50.00,10
+ing0032,Condensed Milk,can,25.00,10
+ing0033,Evaporated Milk,can,30.00,10
+ing0034,Butter,kg,120.00,5
+ing0035,Cheese,kg,150.00,5
+ing0036,Yogurt,cup,20.00,10
+ing0037,Cream,liter,90.00,5
+ing0038,Ice Cream,liter,100.00,5
+ing0039,Chocolate,kg,200.00,5
+ing0040,Sugar,kg,30.00,10
+ing0041,Salt,kg,15.00,10
+ing0042,Soy Sauce,bottle,25.00,10
+ing0043,Fish Sauce,bottle,30.00,10
+ing0044,Oyster Sauce,bottle,35.00,10
+ing0045,Chili Sauce,bottle,35.00,10
+ing0046,Tomato Sauce,bottle,30.00,10
+ing0047,Cooking Oil,liter,60.00,10
+ing0048,Sesame Oil,liter,120.00,5
+ing0049,Vinegar,liter,25.00,10
+ing0050,Black Pepper,kg,150.00,5
+ing0051,Tamarind,kg,60.00,5
+ing0052,Basil Seeds,kg,50.00,5
+ing0053,Pandan Leaves,kg,30.00,5
+ing0054,Coconut,piece,40.00,10
+ing0055,Palm Leaf,kg,20.00,5
+ing0056,Red Onion,kg,25.00,5
+ing0057,Shallot,kg,30.00,5
+ing0058,Galangal,kg,50.00,5
+ing0059,Lemongrass,kg,35.00,5
+ing0060,Kaffir Lime Leaf,kg,60.00,5
+ing0061,Turmeric,kg,50.00,5
+ing0062,Ginger,kg,45.00,5
+ing0063,Thai Chili,kg,80.00,5
+ing0064,Mint,kg,25.00,5
+ing0065,Celery,kg,20.00,5
+ing0066,Spring Onion,kg,25.00,5
+ing0067,Leek,kg,30.00,5
+ing0068,Bean Sprout,kg,20.00,5
+ing0069,Coriander Root,kg,30.00,5
+ing0070,Cilantro,kg,25.00,5
+ing0071,White Pepper,kg,120.00,5
+ing0072,Clove,kg,150.00,5
+ing0073,Cinnamon,kg,100.00,5
+ing0074,Star Anise,kg,90.00,5
+ing0075,Nutmeg,kg,80.00,5
+ing0076,Cardamom,kg,200.00,5
+ing0077,Fennel Seed,kg,80.00,5
+ing0078,Bay Leaf,kg,25.00,5
+ing0079,Dried Chili,kg,70.00,5
+ing0080,Tamarind Paste,kg,60.00,5
+ing0081,Coconut Sugar,kg,50.00,5
+ing0082,Brown Sugar,kg,50.00,5
+ing0083,White Sugar,kg,30.00,10
+ing0084,Honey,kg,120.00,5
+ing0085,Maple Syrup,liter,150.00,5
+ing0086,Molasses,liter,100.00,5
+ing0087,Rice Flour,kg,40.00,5
+ing0088,Corn Flour,kg,35.00,5
+ing0089,Wheat Flour,kg,30.00,10
+ing0090,All-purpose Flour,kg,30.00,10
+ing0091,Baking Powder,kg,25.00,5
+ing0092,Baking Soda,kg,20.00,5
+ing0093,Yeast,kg,50.00,5
+ing0094,Vanilla Extract,liter,150.00,5
+ing0095,Cocoa Powder,kg,200.00,5
+ing0096,Dark Chocolate,kg,220.00,5
+ing0097,White Chocolate,kg,220.00,5
+ing0098,Condensed Coconut Milk,can,30.00,10
+ing0099,Evaporated Coconut Milk,can,35.00,10
+ing0100,Coconut Cream,liter,60.00,5
+ing0101,Almond,kg,300.00,5
+ing0102,Cashew,kg,280.00,5
+ing0103,Pistachio,kg,320.00,5
+ing0104,Walnut,kg,250.00,5
+ing0105,Hazelnut,kg,270.00,5
+ing0106,Peanut,kg,150.00,5
+ing0107,Sesame Seed,kg,100.00,5
+ing0108,Sunflower Seed,kg,90.00,5
+ing0109,Pumpkin Seed,kg,80.00,5
+ing0110,Chia Seed,kg,120.00,5
+ing0111,Flaxseed,kg,100.00,5
+ing0112,Oats,kg,50.00,5
+ing0113,Cornflakes,kg,40.00,5
+ing0114,Rice Noodles,kg,35.00,5
+ing0115,Egg Noodles,kg,40.00,5
+ing0116,Glass Noodles,kg,35.00,5
+ing0117,Pandan Leaves,kg,30.00,5
+ing0118,Dried Mango,kg,120.00,5
+ing0119,Dried Banana,kg,100.00,5
+ing0120,Coconut Milk,liter,60.00,10
+ing0121,Palm Sugar,kg,55.00,10
+ing0122,Fish Stock,liter,70.00,5
+ing0123,Chicken Stock,liter,65.00,5
+ing0124,Whipping Cream,liter,95.00,5
+ing0125,Matcha Powder,kg,280.00,3
