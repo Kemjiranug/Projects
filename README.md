@@ -92,16 +92,46 @@ I enjoy applying classroom knowledge to **hands-on projects**, designing efficie
 
 ---
 
-### 6. Other Projects
+### 6. Database Design and Implementation
+*(Database Design & SQL Project)*  
+📅 **Duration:** 01/2026 – Present  
 
-📁 **Database Design and Implementation**  
-[Browse Folder](./Database%20Design%20and%20Implementation)
+- Designed a normalized database schema based on business requirements  
+- Used **SQL queries** to analyze, validate, and manage data efficiently  
+- Ensured **data consistency and integrity** through constraints and indexes  
+- Structured data to support reporting and future analytics  
 
-📁 **Information Systems Analysis and Prototype**  
-[Browse Folder](./Information%20Systems%20Analysis%20and%20Prototype)
+📌 **View Project:**  
+[Database Design and Implementation](./Database%20Design%20and%20Implementation)
 
-📁 **E-commerce Web Application**  
-[Browse Folder](./E-commerce%20Web%20Application)
+---
+
+### 7. Information Systems Analysis and Prototype**  
+*(System Analysis & QA Project)*  
+📅 **Duration:** 02/2025 – 04/2025  
+
+- Developed **Data Flow Diagrams (DFD Level 0–2)** to model system processes  
+- Created **Use Case Narratives** and **User Flows** to represent system interactions  
+- Designed **test cases (positive & negative)** for validating system functionality  
+- Applied **system testing** to improve data flow and process reliability  
+
+📌 **View Project:**  
+[Information Systems Analysis and Prototype](./Information%20Systems%20Analysis%20and%20Prototype)
+
+---
+
+### 8. E-commerce Web Application**  
+*(Full-Stack Project)*  
+📅 **Duration:** 02/2025 – 04/2025  
+
+- Developed a **full-stack e-commerce platform** with user authentication, product management, and search functionality  
+- Built and tested backend APIs using Node.js, Express, and Postman for reliable data flow  
+- Designed a user-friendly frontend using HTML, CSS, and JavaScript  
+- Optimized **database structure with SQL** for efficient product data handling  
+- Integrated Google Translate API to enable multilingual product descriptions  
+
+📌 **View Project:**  
+[E-commerce Web Application](./E-commerce%20Web%20Application)
 
 ---
 
