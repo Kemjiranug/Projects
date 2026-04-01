@@ -1,80 +1,93 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xi3wYqF3)
+# E-Commerce Web Application (Online Clothing Store)
 
-## Step 1: Download and Unzip the Project
+## Project Description
+This project is a full-stack e-commerce web application for an online clothing store. It includes key features such as user authentication, product management, and search functionality.
 
-1. First, download the zip file containing the project.
-2. Once the download is complete, unzip the file to extract the project folder.
+The backend is built with Node.js and Express, with APIs tested using Postman to ensure reliable data flow. The frontend is developed using HTML, CSS, and JavaScript, with a focus on a user-friendly interface.
 
-## Step 2: Open the Project in Visual Studio Code
+The system uses MySQL for data management and integrates the Google Translate API for multilingual support.
 
-1. Open **Visual Studio Code**.
-2. Click on "Open Folder" and select the folder you just unzipped.
-
-## Step 3: Install Required Dependencies
-
-1. Open the **Terminal** in Visual Studio Code.
-2. Run the following commands to install the necessary dependencies for the project:
+This project demonstrates full-stack development, API integration, database design, and system testing.
 
 
-```bash
-npm init
-npm install cookie-parser
-npm install cors
-npm install express
-npm install nodemon
-npm install path
-npm install url
-npm install dotenv
-npm install express-session
-npm install mysql2
-npm install expression
-```
-User must do all of this on both front end and back end separately in terminal. 
+## Tech Stack
+- Node.js / Express
+- MySQL
+- HTML, CSS, JavaScript
+- Postman
+- Google Translate API
 
-## Step 4: Set Up the Database
+---
 
-Before creating the .env file, you need to set up the MySQL Database.
+## Setup Instructions
 
-Open your MySQL client (e.g., MySQL Workbench or command line).
+### Step 1: Download and Unzip the Project
+1. Download the zip file containing the project.
+2. Unzip the file to extract the project folder.
 
-Run script sec3_gr11_database.sql
+### Step 2: Open the Project in Visual Studio Code
+1. Open Visual Studio Code.
+2. Click "Open Folder" and select the extracted folder.
 
-Ensure you have the proper credentials:
+### Step 3: Install Required Dependencies
+Open the terminal in VS Code and run:
 
-Host: localhost
+npm init  
+npm install cookie-parser  
+npm install cors  
+npm install express  
+npm install nodemon  
+npm install path  
+npm install url  
+npm install dotenv  
+npm install express-session  
+npm install mysql2  
+npm install expression  
 
-Username: itcs223gr11
+*Note: Run these commands separately for both frontend and backend folders.*
 
-Password: itCsgr11**
+---
 
-## Step 5 :Create a `.env` File
-create a `.env` file inside the WS (Web Server) folder.
-In the `.env` file, add the following content:
+## Database Setup
+1. Open MySQL (Workbench or CLI).
+2. Run the script: sec3_gr11_database.sql  
 
-PORT = 8000
+Use the following credentials:
+- Host: localhost  
+- Username: itcs223gr11  
+- Password: itCsgr11**
 
-MYSQL_HOST=localhost
+---
 
- MYSQL_USERNAME=itcs223gr11
- 
- MYSQL_PASSWORD=itCsgr11**
- 
-MYSQL_DATABASE=sec03gr11
+## Environment Configuration
+Create a `.env` file inside the **WS (Web Server)** folder and add:
 
-## Step 6: Start the Localhost
-After that, the users might input the "npm start" to start the localhost.
+PORT=8000  
+MYSQL_HOST=localhost  
+MYSQL_USERNAME=itcs223gr11  
+MYSQL_PASSWORD=itCsgr11**  
+MYSQL_DATABASE=sec03gr11  
 
-If found this massege press Cancel (ยกเลิก) and input "npm start" again 
+---
 
-<img src="https://github.com/user-attachments/assets/756d3a5c-591b-46cd-90cc-4494bd099b48" width="350" height="200"/>
+## Run the Application
+1. In the terminal, run:
+npm start  
 
-Here is the correct example, it will display like this.
+2. If a warning message appears, click Cancel and run npm start again.
 
-<img src="https://github.com/user-attachments/assets/60d33038-e3ff-4f3c-97d3-055bc7203e93" width="300" />
+3. Access the application:
+- Backend: http://localhost:8000  
+- Frontend: http://localhost:3300/homepage  
 
+---
 
-Additionally, the http://localhost:8000 is the back end of our the web browser.
+## Features
+- User authentication system  
+- Product management (add, edit, delete)  
+- Search functionality  
+- Multilingual support via Google Translate API  
+- RESTful API integration  
+- Data validation and API testing with Postman  
 
-Then, the users can input the http://localhost:3300/homepage to the web browser.
-
-Lastly, the users can use our website.
+---
