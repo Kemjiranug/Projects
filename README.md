@@ -1,7 +1,17 @@
 ## About Me
 
-I am a third-year student in the **Faculty of Information and Communication Technology** at **Mahidol University**, specializing in **Database Systems**.  
-I am interested in **Data Analysis and Data Engineering**, with a focus on organizing, modeling, and analyzing data to generate meaningful insights. I enjoy applying classroom knowledge to hands-on projects and continuously improving my technical skills.
+I am a third-year student at the **Faculty of Information and Communication Technology, Mahidol University**, specializing in **Database Systems**. I am passionate about **Data Analysis, Data Engineering, and Software Testing**, focusing on organizing, modeling, analyzing, and validating data to generate meaningful insights.  
+
+I enjoy applying classroom knowledge to **hands-on projects**, designing efficient databases, developing reliable systems, and testing software to ensure quality. My goal is to continuously improve my technical skills and contribute to data-driven solutions that support business decisions.  
+
+---
+
+## Skills & Focus
+
+- **Data Analysis & Engineering:** SQL, Python (Pandas, NumPy, Matplotlib), Data Modeling, ETL, Data Validation  
+- **Software & System Testing:** Test Case Design, Positive & Negative Testing, System QA, API Testing  
+- **Web & Full-Stack Development:** HTML, CSS, JavaScript, Node.js, Express, Database Integration  
+- **Tools & Platforms:** MySQL, Elasticsearch, Postman, Git, Google Translate API  
 
 ---
 
