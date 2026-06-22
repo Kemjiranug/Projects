@@ -1,0 +1,44 @@
+Customer Complaint Tracker
+A Power Apps canvas application integrated with SharePoint and Power Automate to streamline customer complaint management for retail environments.
+Overview
+This project simulates a real-world complaint handling system for a shopping mall, built to practice Microsoft Power Platform development including app design, data management, and workflow automation.
+Workflow
+Customer reports issue
+        ↓
+Staff logs complaint via Power Apps (Log Screen)
+        ↓
+Data saved to SharePoint List (CustomerComplaints_EN)
+        ↓
+Power Automate Flow 1 triggered automatically
+        ↓
+   [Priority = High?]
+    Yes → Urgent email sent to responsible team immediately
+    No  → Standard notification email sent
+        ↓
+Team updates Status → "In Progress" → "Resolved"
+        ↓
+Power Automate Flow 2 triggered on Status change
+        ↓
+   [Status = Resolved?]
+    Yes → Email sent back to staff who logged the complaint
+        ↓
+Dashboard reflects updated complaint statistics in real time
+Features
+
+Log Screen — Form to submit new complaints with category, priority, location, and contact info
+Track Screen — Gallery view of all complaints with filter by status (New / In Progress / Resolved)
+Dashboard — Summary cards showing total complaints by status and priority, with Pie Charts by category and status
+
+Tech Stack
+
+Microsoft Power Apps (Canvas App)
+Microsoft SharePoint List (data source)
+Microsoft Power Automate (automated email notifications)
+Power Fx (app logic and filtering formulas)
+
+Key Learnings
+
+Connecting Power Apps to SharePoint as a data source
+Using Patch() and SubmitForm() to write data
+Building conditional logic with Filter() and If() in Power Fx
+Creating automated flows with conditions and dynamic content in Power Automate
