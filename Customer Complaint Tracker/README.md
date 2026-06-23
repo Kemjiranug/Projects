@@ -35,7 +35,7 @@ Resolution Email
 
 ### Log Complaint Screen
 
-![Log Screen](pic1.png)
+![Log Screen](Screenshot 2026-06-23 230553.png)
 
 ### Track Complaint Screen
 
