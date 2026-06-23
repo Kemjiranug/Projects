@@ -35,26 +35,75 @@ Resolution Email
 
 ### Log Complaint Screen
 
-![Log Screen](Screenshot%202026-06-23%20230553.png)
+<p align="center">
+  <img src="./Screenshot%202026-06-23%20230553.png" width="700">
+</p>
+
+<p align="center">
+Users can submit customer complaints by entering customer information, selecting a category, and describing the issue.
+</p>
+
+---
 
 ### Track Complaint Screen
 
-![Track Screen](Screenshot%202026-06-23%20232058.png)
+<p align="center">
+  <img src="./Screenshot%202026-06-23%20232058.png" width="700">
+</p>
+
+<p align="center">
+Displays all complaints with status indicators, allowing users to monitor progress and search records efficiently.
+</p>
+
+---
+
+### Complaint Detail Screen
+
+<p align="center">
+  <img src="./Screenshot%202026-06-24%20003850.png" width="700">
+</p>
+
+<p align="center">
+Provides detailed information about each complaint, including customer data, category, and current status.
+</p>
+
+---
+
+### Edit Complaint Screen
+
+<p align="center">
+  <img src="./Screenshot%202026-06-24%20004659.png" width="700">
+</p>
+
+<p align="center">
+Authorized users can update complaint information and change the status as issues are being processed.
+</p>
+
+---
 
 ### Dashboard
 
-![Power Automate Flow](./Screenshot%202026-06-24%20005936.png)
+<p align="center">
+  <img src="./Screenshot%202026-06-24%20005936.png" width="700">
+</p>
 
+<p align="center">
+Visual dashboard showing complaint statistics and status distribution in real time.
+</p>
 
-![Dashboard](Screenshot%202026-06-24%20003850.png)
+---
 
 ### Power Automate Flow
 
-![Flow](Screenshot%202026-06-24%20004659.png)
+<p align="center">
+  <img src="./Screenshot%202026-06-24%20005436.png" width="700">
+</p>
 
-![Status Update](./Screenshot%202026-06-24%20005436.png)
+<p align="center">
+Automated workflow that processes complaints and updates their status.
+</p>
 
-![Email Notification](./Screenshot%202026-06-24%20005521.png)
+
 
 
 ##  Learnings
