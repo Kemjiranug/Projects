@@ -35,19 +35,27 @@ Resolution Email
 
 ### Log Complaint Screen
 
-![Log Screen](Screenshot 2026-06-23 230553.png)
+![Log Screen](Screenshot%202026-06-23%20230553.png)
 
 ### Track Complaint Screen
 
-![Track Screen](pic2.png)
+![Track Screen](Screenshot%202026-06-23%20232058.png)
 
 ### Dashboard
 
-![Dashboard](pic3.png)
+![Power Automate Flow](./Screenshot%202026-06-24%20005936.png)
+
+
+![Dashboard](Screenshot%202026-06-24%20003850.png)
 
 ### Power Automate Flow
 
-![Flow](pic4.png)
+![Flow](Screenshot%202026-06-24%20004659.png)
+
+![Status Update](./Screenshot%202026-06-24%20005436.png)
+
+![Email Notification](./Screenshot%202026-06-24%20005521.png)
+
 
 ##  Learnings
 
