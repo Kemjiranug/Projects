@@ -2,6 +2,10 @@
 
 A Power Apps canvas app integrated with SharePoint and Power Automate to streamline customer complaint management in retail environments.
 
+![Power Apps](https://img.shields.io/badge/Power_Apps-742774?style=for-the-badge\&logo=powerapps\&logoColor=white)
+![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge\&logo=microsoftpowerautomate\&logoColor=white)
+![SharePoint](https://img.shields.io/badge/SharePoint-0078D4?style=for-the-badge\&logo=microsoftsharepoint\&logoColor=white)
+
 ## Features
 
 * Log customer complaints through Power Apps
@@ -12,7 +16,7 @@ A Power Apps canvas app integrated with SharePoint and Power Automate to streaml
 ## Tech Stack
 
 * **Microsoft Power Apps (Canvas App)**
-* **SharePoint List**
+* **SharePoint Lists**
 * **Power Automate**
 
 ## Workflow
@@ -96,19 +100,29 @@ Visual dashboard showing complaint statistics and status distribution in real ti
 ### Power Automate Flow
 
 <p align="center">
-  <img src="./Screenshot%202026-06-24%20005436.png" width="700">
+  <img src="./Screenshot%202026-06-24%20005521.png" width="500">
 </p>
 
 <p align="center">
-Automated workflow that processes complaints and updates their status.
+Power Automate workflow that automatically sends email notifications when new complaints are submitted.
 </p>
 
+---
 
+### Email Notification
 
+<p align="center">
+  <img src="./S__14934039.jpg" width="300">
+</p>
 
-##  Learnings
+<p align="center">
+Automated email notification sent via Power Automate to notify the assigned team when a new complaint is submitted.
+</p>
 
-* Connecting Power Apps with SharePoint
+## Key Learnings
+
+* Connecting Power Apps with SharePoint Lists
 * Using `Patch()` and `SubmitForm()`
-* Creating Power Automate workflows
-* Developing dashboards with real-time data
+* Building Power Automate workflows for email notifications
+* Creating real-time dashboards and status tracking
+* Designing user-friendly forms and interfaces
