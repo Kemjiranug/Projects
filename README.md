@@ -1,8 +1,10 @@
 ## About Me
 
-I am a third-year student at the **Faculty of Information and Communication Technology, Mahidol University**, specializing in **Database Systems**. I am passionate about **Data Analysis, Data Engineering, and Software Testing**, focusing on organizing, modeling, analyzing, and validating data to generate meaningful insights.  
+I am a fourth-year student at the **Faculty of Information and Communication Technology, Mahidol University**, specializing in **Database Systems**. I am passionate about **Data Analytics, Data Engineering, and Business Intelligence**, with a strong interest in transforming data into meaningful insights that support business decisions.
 
-I enjoy applying classroom knowledge to **hands-on projects**, designing efficient databases, developing reliable systems, and testing software to ensure quality. My goal is to continuously improve my technical skills and contribute to data-driven solutions that support business decisions.  
+Throughout my academic journey, I have gained hands-on experience with **SQL, Power BI, Microsoft Fabric, ETL processes, Data Warehousing, and Data Visualization** through various projects. I enjoy working with data from collection and transformation to analysis and visualization, while focusing on building efficient data solutions.
+
+I am continuously developing my technical skills and exploring new technologies to create data-driven solutions that deliver business value.
 
 ---
 
