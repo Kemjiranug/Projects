@@ -24,7 +24,7 @@ It focuses on identifying trends, customer behavior, and operational performance
 ---
 
 ### Key Features  
-- Built an interactive dashboard to analyze **4,025 orders and 8.84M revenue**  
+- Built an interactive dashboard to analyze **4,365 orders and 9.56M revenue**  
 - Defined key KPIs including **Total Orders, Average Order Value, and Total Revenue**  
 - Analyzed monthly revenue trends to identify seasonal patterns  
 - Visualized delivery performance, payment methods, and customer segments  
@@ -56,4 +56,4 @@ It focuses on identifying trends, customer behavior, and operational performance
 ### Project Structure  
 - Dashboard (.pbix file)  
 - Dataset  
-- Screenshots / Report  
+- Screenshots/Report
