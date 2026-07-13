@@ -1,7 +1,7 @@
 ## Blinkit Sales Dashboard (Power BI)
 *(Data Analytics & Visualization Project)*
 
-📅 Duration: Mar 2026  
+📅 Duration: December 2025  
 
 ---
 
@@ -14,7 +14,7 @@ It focuses on identifying trends, customer behavior, and operational performance
 ### Dashboard Preview  
 
 <p align="center">
-  <img src="./dashboard_preview.jpg" width="800"/>
+  <img src="./dashboard_preview.jpg.png" width="800"/>
 </p>
 
 <p align="center">
